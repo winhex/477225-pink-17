@@ -6,7 +6,7 @@
 .first-page-style::before {
   content: "";
   display: block;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  .bg-image-mixin(bg-back-mobile@1x.jpg);
   .size-mixin(320px,396px);
   position: relative;
   z-index: 5;
@@ -15,7 +15,7 @@
 .first-page-style::after {
   content: "";
   display: block;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat;
+  .bg-image-mixin(iphone-hand-mobile@1x.png);
   .size-mixin(258px,286px);
   position: absolute;
   z-index: 10;
@@ -29,7 +29,7 @@
   text-align: center;
   margin: 0px;
   vertical-align: middle;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  .bg-image-mixin(bg-back-mobile@1x.jpg);
   .size-mixin(320px,138px);
   padding-top: 100px;
 }

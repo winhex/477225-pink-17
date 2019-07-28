@@ -8,3 +8,8 @@
   width: @width;
   height: @height;
 }
+
+.bg-image-mixin (@img,@repeat: no-repeat) {
+  background-image: url("../img/@{img}");
+  background-repeat: @repeat;
+}
