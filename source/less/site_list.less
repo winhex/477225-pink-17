@@ -1,0 +1,32 @@
+.site-list {
+  width: 320px;
+  font-size: 18px;
+  font-family: @font-bold;
+  line-height: 32px;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.site-list__item {
+  text-align: center;
+  background-color: @main-color;
+  border: 1px solid @black-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: inset 0px 1px 0px 0px @light-white;
+
+  a {
+    text-decoration: none;
+    color: @white-color;
+  }
+}
+
+.site-list__item:hover a {
+  color: @hover-color;
+}
+
+.site-list__item:active a {
+  opacity: 0.3;
+  color: @hover-color;
+}

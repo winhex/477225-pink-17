@@ -1,0 +1,83 @@
+.photo-card-list {
+  background-color: @white-color;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photo-card {
+  background-color: @bg-grey-color;
+  font-family: @font-normal;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.photo-card__nameUser {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.photo-card__postUser {
+  margin-top: 11px;
+  margin-left: 18px;
+  margin-right: 0px;
+}
+
+.photo-card__text {
+  margin-top: 0px;
+}
+
+.photo-card__timeOnline {
+  font-weight: normal;
+}
+
+.photo-card__img_panoramaBest {
+  position: relative;
+  right: 20px;
+}
+
+.like-account {
+  display: flex;
+  margin-left: 19px;
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+
+.like-account__text {
+  font-family: @font-normal;
+  color: @hover-color;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.like-account__button {
+  color: @hover-color;
+  display: block;
+  background: url("../img/icon-heart.svg") 0% 60% no-repeat;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.photo-card__panoramaBest {
+  position: absolute;
+  left: 160px;
+  z-index: 10;
+  display: block;
+  width: 140px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: @white-color;
+  font-family: @font-bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @hover-color;
+  vertical-align: middle;
+}

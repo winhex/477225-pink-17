@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logoImage" src="http://placehold.it/150x100" width="150" height="100" alt="Логотип приложения Пинк">
       <nav class="page-nav">
-        <button class="page-nav__toggle" type="button">Открыть меню сайта
-        </button>
+        <div class="page-nav__header">
+          <img class="page-header__logoImage" src="../img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+          <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
+        </div>
         <ul class="page-nav__list site-list">
           <li class="site-list__item">
             <a href="#">ГЛАВНАЯ</a>
@@ -26,35 +28,37 @@
         </ul>
       </nav>
     </header>
-    <main class="page-container">
+    <main class="page-container first-page-style">
       <h1 class="visually-hidden">Приложение Пинк</h1>
-      <section class="downlods">
+      <section class="downloads">
         <h2 class="visually-hidden">Ссылки для загрузки приложения</h2>
-        <a class="downlods__link-button" href="#">Скачать приложение</a>
-        <ul class="downlods__icon-list">
-          <li class="downlods__item">
-            <a class="downlods__link" href="#">
-              <img class="downlods__img" src="http://placehold.it/150x100" width="150" height="100" alt="Приложение для Айфона">
+        <a class="downloads__link-button" href="#">Скачать приложение</a>
+        <ul class="downloads__icon-list">
+          <li class="downloads__item">
+            <a class="downloads__link" href="#">
+              <img class="downloads__img" src="../img/logo-apple.svg" width="50" height="58" alt="Приложение для Айфона">
             </a>
           </li>
-          <li class="downlods__item">
-            <a class="downlods__link" href="#">
-              <img class="downlods__img" src="http://placehold.it/150x100" width="150" height="100" alt="Приложение для Андроид">
+          <li class="downloads__item">
+            <a class="downloads__link" href="#">
+              <img class="downloads__img" src="../img/logo-android.svg" width="45" height="49" alt="Приложение для Андроид">
             </a>
           </li>
-          <li class="downlods__item">
-            <a class="downlods__link" href="#">
-              <img class="downlods__img" src="http://placehold.it/150x100" width="150" height="100" alt="Приложение для Виндовс 8">
+          <li class="downloads__item">
+            <a class="downloads__link" href="#">
+              <img class="downloads__img" src="../img/logo-microsoft.svg" width="44" height="41" alt="Приложение для Виндовс 8">
             </a>
           </li>
         </ul>
-        <p class="downlods__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Почему нужно установить приложение Пинк</h2>
-        <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <div class="advantages__text-wrapper">
+          <p class="advantages__text">Устали от серости мегаполиса?</p>
+          <p class="advantages__text">Нам есть, что вам предложить!</p>
+        </div>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h3 class="advantages__title">Поднимает настроение</h3>

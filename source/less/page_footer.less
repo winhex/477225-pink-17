@@ -1,0 +1,50 @@
+.page-footer {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-list {
+  display: inline-block;
+  list-style: none;
+  align-self: center;
+  margin: 0px;
+  margin-bottom: 49px;
+}
+
+.social-list__item {
+  display: inline-block;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border: 3px solid @light-text-color;
+  border-radius: 50%;
+
+  &:hover {
+    border: 3px solid @text-color;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.social-list__link {
+  position: relative;
+  top: 12px;
+  left: 16px;
+}
+
+.page-footer__infoDeveloper {
+  font-family: @font-normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-self: center;
+  margin-bottom: 52px;
+}
+
+.page-footer__logo {
+  align-self: center;
+  margin-bottom: 38px;
+  margin-top: 40px;
+}
