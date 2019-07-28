@@ -6,9 +6,7 @@
 }
 
 .downloads__link-button {
-  font-family: @font-bold;
-  font-size: 18px;
-  line-height: 18px;
+  .font-mixin (@font-bold,18px,18px);
   width: 216px;
   border: 3px solid @white-color;
   border-radius: 30px;
@@ -49,9 +47,7 @@
 
 .downloads__text {
   color: @white-color;
-  font-family: @font-light;
-  font-size: 14px;
-  line-height: 24px;
+  .font-mixin(@font-light,14px,24px);
   text-align: center;
   margin-top: 4px;
   margin-left: 22px;

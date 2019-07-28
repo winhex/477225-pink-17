@@ -7,9 +7,7 @@
 }
 
 .advantages__text {
-  font-family: @font-light;
-  font-size: 24px;
-  line-height: 29px;
+  .font-mixin (@font-light,24px,29px);
   text-align: center;
   color: @text-color;
   background-color: @white-color;
@@ -28,16 +26,13 @@
     content: "";
     display: block;
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
-    width: 157px;
-    height: 330px;
+    .size-mixin(157px,330px);
     margin: 0 auto;
   }
 }
 
 .advantages__title {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: @font-bold;
+  .font-mixin(@font-bold,18px,24px);
   color: @black-color;
   text-align: center;
   margin-bottom: 9px;
@@ -45,9 +40,7 @@
 
 .advantages__descriptions {
   text-align: center;
-  font-family: @font-light;
-  font-size: 14px;
-  line-height: 24px;
+  .font-mixin(@font-light,14px,24px);
   margin-bottom: 31px;
   margin-left: 21px;
   width: 244px;

@@ -8,15 +8,13 @@
 
 .photo-card {
   background-color: @bg-grey-color;
-  font-family: @font-normal;
-  line-height: 24px;
-  font-size: 14px;
+  .font-mixin(@font-normal,14px,24px);
   margin-bottom: 20px;
   text-align: left;
 }
 
 .photo-card__nameUser {
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -47,10 +45,8 @@
 }
 
 .like-account__text {
-  font-family: @font-normal;
+  .font-mixin(@font-normal,12px,24px);
   color: @hover-color;
-  font-size: 12px;
-  line-height: 24px;
   margin: 0px;
   margin-left: 10px;
 }
@@ -59,8 +55,7 @@
   color: @hover-color;
   display: block;
   background: url("../img/icon-heart.svg") 0% 60% no-repeat;
-  width: 20px;
-  height: 20px;
+  .size-mixin(20px,20px);
   border: none;
 }
 
@@ -73,9 +68,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   color: @white-color;
-  font-family: @font-bold;
-  font-size: 12px;
-  line-height: 24px;
+  .font-mixin(@font-bold,12px,24px);
   text-align: center;
   text-transform: uppercase;
   background-color: @hover-color;
