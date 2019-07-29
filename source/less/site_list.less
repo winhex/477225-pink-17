@@ -1,22 +1,26 @@
 .site-list {
   width: 320px;
+  margin: 0;
+  padding-left: 0;
+
   .font-mixin(@font-bold,18px,32px);
+
   list-style: none;
-  padding-left: 0px;
-  margin: 0px;
 }
 
 .site-list__item {
-  text-align: center;
-  background-color: @main-color;
-  border: 1px solid @black-color;
   padding-top: 15px;
   padding-bottom: 15px;
-  box-shadow: inset 0px 1px 0px 0px @light-white;
+
+  text-align: center;
+
+  background-color: @main-color;
+  border: 1px solid @black-color;
+  box-shadow: inset 0 1px 0 0 @light-white;
 
   a {
-    text-decoration: none;
     color: @white-color;
+    text-decoration: none;
   }
 }
 
@@ -25,6 +29,7 @@
 }
 
 .site-list__item:active a {
-  opacity: 0.3;
   color: @hover-color;
+
+  opacity: 0.3;
 }

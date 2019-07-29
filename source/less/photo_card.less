@@ -1,21 +1,24 @@
 .photo-card-list {
-  background-color: @white-color;
   display: flex;
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+
+  background-color: @white-color;
 }
 
 .photo-card {
-  background-color: @bg-grey-color;
-  .font-mixin(@font-normal,14px,24px);
   margin-bottom: 20px;
+
+  .font-mixin(@font-normal,14px,24px);
   text-align: left;
+
+  background-color: @bg-grey-color;
 }
 
 .photo-card__name-user {
-  font-weight: 700;
   font-style: normal;
+  font-weight: 700;
 }
 
 .photo-card__post-user {
@@ -39,24 +42,27 @@
 
 .like-account {
   display: flex;
-  margin-left: 19px;
   margin-top: -4px;
   margin-bottom: 20px;
+  margin-left: 19px;
 }
 
 .like-account__text {
+  margin: 0;
+  margin-left: 10px;
+
   .font-mixin(@font-normal,12px,24px);
   color: @hover-color;
-  margin: 0px;
-  margin-left: 10px;
 }
 
 .like-account__button {
-  color: @hover-color;
   display: block;
+  .size-mixin(20px,20px);
+
+  color: @hover-color;
+
   .bg-img-mixin(icon-heart.svg);
   background-position: 0% 60%;
-  .size-mixin(20px,20px);
   border: none;
 }
 
@@ -64,14 +70,17 @@
   position: absolute;
   left: 160px;
   z-index: 10;
+
   display: block;
   width: 140px;
   padding-top: 6px;
   padding-bottom: 6px;
-  color: @white-color;
+
   .font-mixin(@font-bold,12px,24px);
-  text-align: center;
-  text-transform: uppercase;
-  background-color: @hover-color;
   vertical-align: middle;
+  text-align: center;
+  color: @white-color;
+  text-transform: uppercase;
+
+  background-color: @hover-color;
 }

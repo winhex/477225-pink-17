@@ -1,56 +1,63 @@
 .downloads {
   display: flex;
   flex-direction: column;
-  background-color: @bg-downloads-color;
   padding-top: 28px;
+
+  background-color: @bg-downloads-color;
 }
 
 .downloads__link-button {
-  .font-mixin (@font-bold,18px,18px);
   width: 216px;
+  margin-bottom: 32px;
+  margin-left: 20px;
+  padding-top: 14px;
+  padding-right: 29px;
+  padding-bottom: 14px;
+  padding-left: 29px;
+
+  .font-mixin (@font-bold,18px,18px);
+  text-align: center;
+  color: @white-color;
+  text-decoration: none;
+
   border: 3px solid @white-color;
   border-radius: 30px;
-  text-decoration: none;
-  color: @white-color;
-  text-align: center;
-  padding-left: 29px;
-  padding-right: 29px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  margin-left: 20px;
-  margin-bottom: 32px;
 
   &:hover {
-    background-color: @white-color;
     color: @hover-color;
+
+    background-color: @white-color;
   }
 
   &:active {
-    background-color: @white-color;
     color: lighten(@hover-color, 40%);
+
+    background-color: @white-color;
   }
 }
 
 .downloads__icon-list {
-  list-style: none;
   display: flex;
   justify-content: center;
+
+  list-style: none;
 }
 
 .downloads__item {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-right: 30px;
   margin-top: -18px;
+  margin-right: 30px;
 }
 
 .downloads__text {
-  color: @white-color;
+  width: 280px;
+  margin-top: 4px;
+  margin-bottom: 30px;
+  margin-left: 22px;
+
   .font-mixin(@font-light,14px,24px);
   text-align: center;
-  margin-top: 4px;
-  margin-left: 22px;
-  margin-bottom: 30px;
-  width: 280px;
+  color: @white-color;
 }
