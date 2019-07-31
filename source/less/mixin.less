@@ -1,5 +1,5 @@
-.font-mixin (@font-famyly,@font-size,@line-height) {
-  font-family: @font-famyly;
+.font-mixin (@font-family,@font-size,@line-height) {
+  font-family: @font-family;
   font-size: @font-size;
   line-height: @line-height;
 }
@@ -9,7 +9,7 @@
   height: @height;
 }
 
-.bg-image-mixin (@img,@repeat: no-repeat) {
+.bg-image-mixin (@img;@repeat: no-repeat) {
   background-image: url("../img/@{img}");
   background-repeat: @repeat;
 }
