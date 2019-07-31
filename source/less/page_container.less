@@ -6,7 +6,7 @@
 .first-page-style::before {
   content: " ";
   display: block;
-  .bg-image-mixin(bg-back-mobile@1x.jpg);
+  .bg-image-mixin("bg-back-mobile@1x.jpg");
   .size-mixin(320px,396px);
   position: relative;
   z-index: 5;
@@ -21,7 +21,7 @@
   display: block;
   .size-mixin(258px,286px);
 
-  .bg-image-mixin(iphone-hand-mobile@1x.png);
+  .bg-image-mixin("iphone-hand-mobile@1x.png");
 }
 
 .page-container__title {
@@ -35,14 +35,14 @@
   text-align: center;
   vertical-align: middle;
 
-  .bg-image-mixin(bg-back-mobile@1x.jpg);
+  .bg-image-mixin("bg-back-mobile@1x.jpg");
 }
 
 .page-container__text {
   padding-top: 39px;
   padding-bottom: 39px;
 
-  .font-mixin (@font-normal,14px,30px);
+  .font-mixin(@font-normal,14px,30px);
   color: @text-color;
   text-align: center;
 
