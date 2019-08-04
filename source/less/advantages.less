@@ -72,7 +72,7 @@
     .font-mixin(@font-light,40px,48px);
   }
 
-  .advantages__text--tablet {
+  .advantages__text_tablet {
     width: 334px;
   }
 
@@ -80,14 +80,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: @tablet-width;
     padding-top: 87px;
 
     &::after {
       position: absolute;
-      bottom: -20px;
+      bottom: 19px;
       left: 22px;
 
-      .size-mixin(270px,483px);
+      .size-mixin(270px,464px);
       margin: 0 auto;
 
       .bg-image-mixin("iphone-screen-3-tablet@1x.png");
@@ -156,8 +157,7 @@
   .advantages__descriptions {
     width: 241px;
 
-    text-align: center;
-
     .font-mixin(@font-light,18px,28px);
+    text-align: center;
   }
 }
