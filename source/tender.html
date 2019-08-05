@@ -33,6 +33,58 @@
     </header>
     <main class="page-container">
       <h1 class="page-container__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <p class="page-container__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <section class="page-container__form">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="personal-data">
+            <label for="user-surname">ФАМИЛИЯ</label>
+            <input id="user-surname" name="person-surname" placeholder="Укажите фамилию*" type="text">
+            <label for="user-name">ИМЯ</label>
+            <input id="user-name" name="person-name" placeholder="Введите ваше имя*" type="text">
+            <label for="user-patronymic">Отчество</label>
+            <input id="user-patronymic" name="person-patronymic" placeholder="Ну и отчество тоже" type="text">
+          </fieldset>
+        <fieldset class="personal-achievement">
+          <legend class="personal-achievement-title">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+          <input id="checkbox-1" type="checkbox" name="achievement" value="Сделал селфи с акулой">
+          <label for="checkbox-1">Сделал селфи с акулой</label>
+          <input id="checkbox-2" type="checkbox" name="achievement" value="Обгорел на пляже">
+          <label for="checkbox-2">Обгорел на пляже</label>
+          <input id="checkbox-3" type="checkbox" name="achievement" value="Видел Чака Норриса">
+          <label for="checkbox-3">Видел Чака Норриса</label>
+          <input id="checkbox-4" type="checkbox" name="achievement" value="Накупил сувениров">
+          <label for="checkbox-4">Накупил сувениров</label>
+          <input id="checkbox-5" type="checkbox" name="achievement" value="Удержал башню">
+          <label for="checkbox-5">Удержал башню</label>
+        </fieldset>
+        <fieldset class="personal-data">
+          <label for="user-telephone-number">НОМЕР ТЕЛЕФОНА</label>
+          <input id="user-telephone-number" name="person-telephone-number" placeholder="Номер, пожалуйста" type="tel">
+          <label for="user-email">АДРЕС ПОЧТЫ</label>
+          <input id="user-email" name="person-email" placeholder="Введите почту*" type="email">
+        </fieldset>
+        <fieldset class="personal-apps">
+          <legend class="personal-apps-title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
+           <label>
+            <input id="radio-1" name="apps" type="radio" value="Pink для iOS">Pink для iOS
+            </label>
+            <label>
+            <input id="radio-2" name="apps" type="radio" value="Pink на Android">Pink на Android
+            </label>
+            <label>
+            <input id="radio-3" name="apps" type="radio" value="Windows Phone">Windows Phone
+            </label>
+        </fieldset>
+        <fieldset class="personal-feedback">
+           <legend class="personal-feedback-title">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+           <textarea cols="30" id="user-feedback" name="feedback" placeholder="Можнопрям в красках, не стесняясь в выражениях" rows="5"></textarea>
+        </fieldset>
+        <div>
+          <button class="page-container__form-button" type="submit">ОТПРАВИТЬ ФОРМУ</button>
+          <p>*-ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+        </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo site-logo" href="#">
