@@ -4,6 +4,7 @@
   padding-left: 0;
 
   .font-mixin(@font-bold,18px,32px);
+  text-transform: uppercase;
 
   list-style: none;
 }
@@ -32,4 +33,35 @@
   color: @hover-color;
 
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    position: relative;
+    top: 78px;
+    left: 343px;
+    z-index: 25;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 720px;
+
+    .font-mixin(@font-normal,18px,18px);
+    text-transform: none;
+  }
+
+  .site-list__item {
+    margin-left: 80px;
+
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
 }

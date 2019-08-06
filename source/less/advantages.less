@@ -2,6 +2,10 @@
   background-color: @white-color;
 }
 
+.advantages__img {
+  display: none;
+}
+
 .advantages__text-wrapper {
   padding-top: 39px;
 }
@@ -18,15 +22,17 @@
 }
 
 .advantages__list {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 66px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   list-style: none;
+
   background-color: @bg-grey-color;
 
   &::after {
     content: "";
+
     display: block;
     .size-mixin(157px,330px);
     margin: 0 auto;
@@ -39,8 +45,8 @@
   margin-bottom: 9px;
 
   .font-mixin(@font-bold,18px,24px);
-  color: @black-color;
   text-align: center;
+  color: @black-color;
 }
 
 .advantages__descriptions {
@@ -50,4 +56,108 @@
 
   .font-mixin(@font-light,14px,24px);
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .advantages__text {
+    margin-bottom: 0;
+
+    .font-mixin(@font-light,40px,48px);
+  }
+
+  .advantages__text_tablet {
+    width: 334px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: @tablet-width;
+    padding-top: 87px;
+
+    &::after {
+      position: absolute;
+      bottom: 19px;
+      left: 22px;
+
+      .size-mixin(270px,464px);
+      margin: 0 auto;
+
+      .bg-image-mixin("iphone-screen-3-tablet@1x.png");
+    }
+  }
+
+  .advantages__title {
+    margin-bottom: 0;
+    margin-left: 6px;
+  }
+
+  .advantages__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .advantages__descriptions {
+    width: 295px;
+    margin-right: 15px;
+    margin-bottom: 17px;
+    margin-left: 0;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__text-wrapper {
+    padding-top: 61px;
+  }
+
+  .advantages__text {
+    .font-mixin(@font-light,50px,60px);
+  }
+
+  .advantages__text--tablet {
+    width: 420px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 31px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .advantages__item {
+    align-items: center;
+    width: 241px;
+  }
+
+  .advantages__img {
+    display: block;
+  }
+
+  .advantages__title {
+    margin-top: 52px;
+
+    .font-mixin(@font-bold,30px,30px);
+  }
+
+  .advantages__descriptions {
+    width: 241px;
+
+    .font-mixin(@font-light,18px,28px);
+    text-align: center;
+  }
 }

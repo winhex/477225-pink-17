@@ -1,9 +1,12 @@
 .page-nav__header {
   .size-mixin(305px,45px);
+
   padding-top: 15px;
   padding-left: 15px;
 
   background-color: @main-color;
+
+  // opacity: 0.3;
 }
 
 .page-nav__toggle {
@@ -17,4 +20,44 @@
   position: relative;
   top: -5px;
   left: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-nav__header {
+    .size-mixin(645px,110px);
+    padding-top: 0;
+  }
+
+  .page-nav__toggle {
+    top: 45px;
+    left: 450px;
+  }
+
+  .page-header__logo-image {
+    top: 45px;
+  }
+
+  .page-header__logo {
+    position: relative;
+    top: 45px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-nav__toggle {
+    display: none;
+  }
+
+  .page-nav__header {
+    position: absolute;
+    top: 50px;
+    left: 125px;
+    z-index: 25;
+
+
+    .size-mixin(@desktop-width,110px);
+    padding-top: 0;
+
+    background-color: transparent;
+  }
 }

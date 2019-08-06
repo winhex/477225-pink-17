@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
@@ -10,22 +11,22 @@
       <nav class="page-nav">
         <div class="page-nav__header">
           <a class="page-header__logo site-logo" href="index.html">
-            <img class="site-logo__image" src="../img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+            <img class="site-logo__image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
           </a>
           <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
         </div>
         <ul class="page-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#">ФОТОГРАФИИ</a>
+            <a href="#">Фотографии</a>
           </li>
           <li class="site-list__item">
-            <a href="tender.html">КОНКУРС</a>
+            <a href="tender.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru">HTML ACADEMY</a>
+            <a href="https://htmlacademy.ru">Html academy</a>
           </li>
         </ul>
       </nav>
@@ -34,9 +35,11 @@
       <h1 class="page-container__title">Фотографии пользователей</h1>
       <p class="page-container__text">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
       <section class="photo-card-list">
-        <div class="photo-card">
+        <div class="photo-card photo-card_best">
         <span class="photo-card__panorama-best">ПАНОРАМА ДНЯ</span>
-        <img class="photo-card__img photo-card__img_best" src="../img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от пользователя">
+        <div class="photo-card__img_wrapper">
+          <img class="photo-card__img photo-card__img_best" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от пользователя">
+        </div>
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Анна
             <span class="photo-card__time-online">(5 МИНУТ НАЗАД)</span></cite>
@@ -51,7 +54,7 @@
           </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="../img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <img class="photo-card__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Левон
             <span class="photo-card__time-online">(5 ЧАСОВ НАЗАД)</span></cite>
@@ -65,7 +68,7 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="../img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <img class="photo-card__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Антон
             <span class="photo-card__time-online">(12 ЧАСОВ НАЗАД)</span></cite>
@@ -79,7 +82,7 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="../img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <img class="photo-card__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Борис
             <span class="photo-card__time-online">(20 ЧАСОВ НАЗАД)</span></cite>
@@ -93,7 +96,7 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="../img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <img class="photo-card__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Сергей
             <span class="photo-card__time-online">(25 ЧАСОВ НАЗАД)</span></cite>
@@ -107,7 +110,7 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="../img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <img class="photo-card__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Максим
             <span class="photo-card__time-online">(40 ЧАСОВ НАЗАД)</span></cite>
@@ -121,7 +124,7 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="../img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <img class="photo-card__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Надежда
             <span class="photo-card__time-online">(45 ЧАСОВ НАЗАД)</span></cite>
@@ -139,28 +142,28 @@
     <footer class="page-footer">
       <a class="page-footer__logo site-logo" href="#">
 
-        <img class="site-logo-image" src="../img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
+        <img class="site-logo-image" src="img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
       </a>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <img class="social-list__img" src="../img/icon-twitter.svg" width="18" height="15" alt="Твиттер">
+            <img class="social-list__img" src="img/icon-twitter.svg" width="18" height="15" alt="Твиттер">
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <img class="social-list__img" src="../img/icon-facebook.svg" width="9" height="19" alt="Фейсбук">
+            <img class="social-list__img" src="img/icon-facebook.svg" width="9" height="19" alt="Фейсбук">
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <img class="social-list__img" src="../img/icon-youtube.svg" width="15" height="14" alt="Ютьюб">
+            <img class="social-list__img" src="img/icon-youtube.svg" width="15" height="14" alt="Ютьюб">
           </a>
         </li>
       </ul>
       <span class="page-footer__info-developer">Разработано
         <a class="page-footer__link-developer" href="https://htmlacademy.ru">
-          <img class="page-footer__icon" src="../img/htmlacademy.svg" width="30" height="34" alt="Логотип разработчика сайта">
+          <img class="page-footer__icon" src="img/htmlacademy.svg" width="30" height="34" alt="Логотип разработчика сайта">
         </a>
       </span>
     </footer>
