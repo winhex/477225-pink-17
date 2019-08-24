@@ -1,24 +1,46 @@
+.page-footer_first-page {
+  display: none;
+}
+
 .page-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__icon {
+  .size-mixin(40px;44px);
+  position: relative;
+
+  &:hover path{
+    fill: @black-color;
+  }
+
+  &:active path {
+    fill: @black-color;
+    opacity: 0.3;
+  }
 }
 
 .social-list {
   display: flex;
-  margin-bottom: 49px;
+  margin-bottom: 23px;
+  margin-right: 10px;
   padding-left: 0;
+  width: 175px;
+  justify-content: space-between;
 
   list-style: none;
 }
 
 .social-list__item {
-  position: relative;
+  .flex-mixin();
+  justify-content: center;
+  align-items: center;
 
-  display: inline-block;
   .size-mixin(44px,44px);
-  margin-right: 20px;
 
   border: 3px solid @light-text-color;
   border-radius: 50%;
@@ -33,31 +55,51 @@
 }
 
 .social-list__link {
-  position: relative;
-  top: 12px;
-  left: 16px;
+  margin-left: 3px;
 }
 
 .page-footer__info-developer {
-  align-self: center;
+  .flex-mixin();
+  align-items: center;
   margin-bottom: 52px;
+  position: relative;
+  right: -4px;
+  top: 10px;
 
   .font-mixin(@font-normal,14px,18px);
+}
+
+.page-footer__icon {
+  margin-left: 10px;
+  position: relative;
+  top: 3px;
+  right: 1px;
+
+  path {
+    fill: @hover-color;
+  }
 }
 
 .page-footer__logo {
   align-self: center;
   margin-top: 40px;
-  margin-bottom: 38px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: @tablet-width) {
+  .page-footer_first-page {
+    display: block;
+    width: @tablet-width;
+    margin: 0 auto;
+  }
+
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
     padding-right: 20px;
     padding-left: 20px;
+    margin-top: -10px;
   }
 
   .social-list {
@@ -67,14 +109,25 @@
 
   .page-footer__info-developer {
     margin-bottom: 0;
-
-    .font-mixin(@font-normal,18px,30px);
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
-    justify-content: space-around;
     width: 1160px;
+    justify-content: space-between;
+  }
+
+  .page-footer_first-page {
+    margin-top: 26px;
+    width: @desktop-width;
+  }
+
+  .page-footer__info-developer {
+    .font-mixin(@font-normal,18px,30px);
+  }
+
+  .social-list {
+    margin-left: 22px;
   }
 }

@@ -1,3 +1,8 @@
+.header-container {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-nav__header {
   .size-mixin(305px,45px);
 
@@ -23,6 +28,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .header-container {
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .page-nav__header {
     .size-mixin(645px,110px);
     padding-top: 0;
@@ -44,6 +54,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .header-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .page-nav__toggle {
     display: none;
   }
