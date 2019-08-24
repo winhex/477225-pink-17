@@ -1,0 +1,113 @@
+.effect-apps-info {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .effect-apps-info {
+    .flex-mixin();
+    align-items: flex-end;
+    margin-bottom: 161px;
+    background-color: @white-color;
+  }
+
+  .effect-apps-info__wrapper {
+    .flex-mixin(@flex-direction:column);
+  }
+
+  .effect-apps-info__img {
+    .size-mixin(238px;276px);
+    .flex-mixin();
+    position: relative;
+    right: 22px;
+    bottom: 3px;
+
+
+    & span {
+      .flex-mixin();
+      justify-content: center;
+      position: absolute;
+      top: 92px;
+      left: 20px;
+      padding: 15px;
+      .size-mixin(140px;140px);
+      .font-mixin(@font-bold;96px;122px);
+      color: @hover-color;
+      border: 15px solid @hover-color;
+      border-radius: 50%;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    & svg {
+      fill: @bg-grey-color;
+    }
+  }
+
+  .effect-apps-info__title {
+    width: 165px;
+    .font-mixin(@font-bold;30px;36px);
+    color: @black-color;
+    padding-top: 82px;
+    padding-left: 49px;
+    margin-bottom: 2px;
+  }
+
+  .effect-apps-info__text {
+    .font-mixin(@font-light;14px;24px);
+    color: @text-color;
+    width: 286px;
+    padding-left: 49px;
+  }
+
+  .effect-apps-info__link {
+    color: @hover-color;
+    .font-mixin(@font-light;14px;14px);
+    padding-left: 49px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect-apps-info {
+    align-items: center;
+  }
+
+  .effect-apps-info__wrapper {
+    position: relative;
+    right: 61px;
+    bottom: 21px;
+  }
+
+  .effect-apps-info__title {
+    width: 300px;
+
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 1px;
+  }
+
+  .effect-apps-info__img {
+    .size-mixin(438px;476px);
+    left: 13px;
+    top: 37px;
+    bottom: 0;
+
+    span {
+      top: 71px;
+      left: 22px;
+      .size-mixin(190px;190px);
+      .font-mixin(@font-bold;120px;172px);
+    }
+  }
+
+  .effect-apps-info__text {
+    .font-mixin(@font-normal;18px;30px);
+    width: 522px;
+    padding-left: 0;
+    margin-bottom: 37px;
+  }
+
+  .effect-apps-info__link {
+    .font-mixin(@font-normal;18px;18px);
+    padding-left: 0;
+  }
+}

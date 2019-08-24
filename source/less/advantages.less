@@ -1,5 +1,7 @@
 .advantages {
   background-color: @white-color;
+  .flex-mixin(@flex-direction:column);
+  justify-content: center;
 }
 
 .advantages__img {
@@ -7,7 +9,17 @@
 }
 
 .advantages__text-wrapper {
-  padding-top: 39px;
+  padding-top: 38px;
+  position: relative;
+
+  &::after {
+    content: "";
+    .bg-image-mixin("bg-triangle-white.svg");
+    .size-mixin(320px;104px);
+    position: absolute;
+    top: 150px;
+    z-index: 20;
+  }
 }
 
 .advantages__text {
@@ -17,11 +29,14 @@
   .font-mixin(@font-light,24px,29px);
   text-align: center;
   color: @text-color;
+  position: relative;
+  z-index: 25;
 
   background-color: @white-color;
 }
 
 .advantages__list {
+  position: relative;
   padding-top: 66px;
   padding-right: 20px;
   padding-left: 20px;
@@ -51,7 +66,7 @@
 
 .advantages__descriptions {
   width: 244px;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
   margin-left: 21px;
 
   .font-mixin(@font-light,14px,24px);
@@ -64,6 +79,16 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
+    padding-left: 3px;
+
+    &::after {
+      content: "";
+      .bg-image-mixin("bg-triangle-white.svg");
+      .size-mixin(665px;200px);
+      position: absolute;
+      top: 196px;
+      z-index: 20;
+    }
   }
 
   .advantages__text {
@@ -72,7 +97,7 @@
     .font-mixin(@font-light,40px,48px);
   }
 
-  .advantages__text_tablet {
+  .advantages__text_size {
     width: 334px;
   }
 
@@ -80,15 +105,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: @tablet-width;
+    width: 620px;
     padding-top: 87px;
 
     &::after {
       position: absolute;
-      bottom: 19px;
+      top: 34px;
       left: 22px;
+      z-index: 21;
 
-      .size-mixin(270px,464px);
+      .size-mixin(270px,482px);
       margin: 0 auto;
 
       .bg-image-mixin("iphone-screen-3-tablet@1x.png");
@@ -97,7 +123,8 @@
 
   .advantages__title {
     margin-bottom: 0;
-    margin-left: 6px;
+    margin-left: 8px;
+    margin-top: 18px;
   }
 
   .advantages__item {
@@ -107,10 +134,8 @@
   }
 
   .advantages__descriptions {
-    width: 295px;
-    margin-right: 15px;
-    margin-bottom: 17px;
-    margin-left: 0;
+    width: 294px;
+    margin-bottom: 14px;
 
     text-align: left;
   }
@@ -118,21 +143,41 @@
 
 @media (min-width: @desktop-width) {
   .advantages__text-wrapper {
-    padding-top: 61px;
+    padding-top: 66px;
+
+    &::after {
+      .size-mixin(1204px;173px);
+      position: absolute;
+      top: 245px;
+      z-index: 20;
+      background-size: cover;
+    }
   }
 
   .advantages__text {
     .font-mixin(@font-light,50px,60px);
   }
 
-  .advantages__text--tablet {
+  .advantages__text_size {
     width: 420px;
+  }
+
+  .advantages__list_wrapper {
+    background-color: @bg-grey-color;
+    width: 1200px;
+    .flex-mixin();
+    justify-content: center;
   }
 
   .advantages__list {
     flex-direction: row;
-    justify-content: center;
     padding-top: 31px;
+
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 963px;
+
 
     &::after {
       display: none;
@@ -141,23 +186,32 @@
 
   .advantages__item {
     align-items: center;
-    width: 241px;
+    width: 240px;
   }
 
   .advantages__img {
     display: block;
+    position: relative;
+    top: 29px;
+    left: -1px;
+    z-index: 20;
   }
 
   .advantages__title {
+    width: 240px;
     margin-top: 52px;
+    margin-left: 0;
+
 
     .font-mixin(@font-bold,30px,30px);
   }
 
   .advantages__descriptions {
     width: 241px;
+    margin-left: 0;
+    margin-top: 24px;
 
-    .font-mixin(@font-light,18px,28px);
+    .font-mixin(@font-normal,18px,30px);
     text-align: center;
   }
 }

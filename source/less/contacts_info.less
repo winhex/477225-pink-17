@@ -1,0 +1,131 @@
+.contacts-info {
+  .flex-mixin(@flex-direction:column);
+}
+
+.contacts-info__ways {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    .bg-image-mixin("bg-triangle-white-footer.svg");
+    background-size: 320px 100px;
+    .size-mixin(320px;104px);
+    position: absolute;
+    top: 330px;
+    z-index: 20;
+  }
+}
+
+.contacts-info__text {
+  .font-mixin(@font-light;24px;29px);
+  color: @text-color;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.contacts-info__ways-name {
+  .font-mixin(@font-bold;18px;30px);
+  color: @text-color;
+  .flex-mixin(@flex-direction:column);
+  text-align: center;
+  margin-bottom: 24px;
+  padding-left: 3px;
+  padding-bottom: 20px;
+}
+
+.contacts-info__ways-data {
+  text-decoration: none;
+  .font-mixin(@font-light;24px;30px);
+  color: @hover-color;
+  padding-top: 2px;
+}
+
+.contacts-info__ways-data-link:hover {
+  color: @text-color;
+  text-decoration: underline;
+}
+
+.contacts-info__ways-data-link:active {
+  color: @text-color;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.map iframe {
+  .size-mixin(320px;198px);
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-info {
+    align-items: center;
+
+    &::after {
+      background-size: 660px 100px;
+      .size-mixin(644px;235px);
+
+      top: 206px;
+    }
+  }
+
+  .contacts-info__text {
+    width: 370px;
+    .font-mixin(@font-light;40px;48px);
+    color: @text-color;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 23px;
+  }
+
+  .contacts-info__ways {
+    .flex-mixin();
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -17px;
+
+    &::after {
+      background-size: 664px 100px;
+      .size-mixin(664px;100px);
+
+      top: 209px;
+    }
+  }
+
+  .contacts-info__ways-name {
+    width: 318px;
+  }
+
+  .map iframe {
+    .size-mixin(660px;375px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    margin-top: -9px;
+  iframe {
+    .size-mixin(1200px;505px);
+  }
+ }
+
+  .contacts-info__text {
+    width: 465px;
+    .font-mixin(@font-light;50px;56px);
+    margin-top:  -9px;
+    margin-bottom: 25px;
+  }
+
+  .contacts-info__ways {
+    margin-top: 32px;
+  }
+
+  .contacts-info__ways-name:nth-child(2) {
+    order: 2;
+  }
+
+  .contacts-info__ways-data {
+    .font-mixin(@font-light;24px;28px);
+    padding-top: 22px;
+  }
+}

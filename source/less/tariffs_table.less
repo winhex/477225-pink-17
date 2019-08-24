@@ -1,0 +1,29 @@
+.tariffs-cost {
+  border-collapse: collapse;
+}
+
+.tariffs-cost tr {
+  .flex-mixin();
+}
+
+.tariffs-cost td {
+  width: 157px;
+  border: 1px solid @border-color;
+}
+
+.tariffs-cost-name {
+  .flex-mixin(@flex-direction: column);
+  align-items: center;
+  background-color: @text-color;
+  .font-mixin(@font-bold;16px;30px);
+  color: @white-color;
+
+  span {
+    .font-mixin(@font-light;18px;30px);
+  }
+}
+
+ .tariffs-cost-feature {
+  color: @text-color;
+  .font-mixin(@font-normal;14px;30px);
+}

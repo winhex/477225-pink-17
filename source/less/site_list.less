@@ -45,7 +45,7 @@
   .site-list {
     position: relative;
     top: 78px;
-    left: 343px;
+    left: 351px;
     z-index: 25;
 
     display: flex;
@@ -63,5 +63,14 @@
     background-color: transparent;
     border: none;
     box-shadow: none;
+  }
+
+  .site-list__item:active a {
+    color: @white-color;
+    opacity: 0.3;
+  }
+
+  .site-list__item_active {
+    border-bottom: 1px solid @white-color;
   }
 }
