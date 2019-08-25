@@ -12,7 +12,11 @@
         <nav class="page-nav">
           <div class="page-nav__header">
             <a class="page-header__logo site-logo" href="index.html">
-              <img class="site-logo__image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="site-logo__image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+              </picture>
             </a>
             <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
           </div>
@@ -43,8 +47,13 @@
         <div class="photo-card photo-card_best">
         <span class="photo-card__panorama-best">ПАНОРАМА ДНЯ</span>
         <div class="photo-card__img_wrapper">
-          <img class="photo-card__img photo-card__img_best" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фото от пользователя">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photo-card__img photo-card__img_best" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото от пользователя">
+          </picture>
         </div>
+        <div class="photo-card__post-user_wrapper">
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Анна
             <span class="photo-card__time-online">(5 МИНУТ НАЗАД)</span></cite>
@@ -57,9 +66,14 @@
               <span class="like-account__numbers">215</span>
             </p>
           </div>
+        </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+          <img class="photo-card__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+       </picture>
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Левон
             <span class="photo-card__time-online">(5 ЧАСОВ НАЗАД)</span></cite>
@@ -73,7 +87,11 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+          <img class="photo-card__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+        </picture>
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Антон
             <span class="photo-card__time-online">(12 ЧАСОВ НАЗАД)</span></cite>
@@ -87,7 +105,11 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+          <img class="photo-card__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+        </picture>
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Борис
             <span class="photo-card__time-online">(20 ЧАСОВ НАЗАД)</span></cite>
@@ -101,7 +123,11 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+          <img class="photo-card__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+        </picture>
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Сергей
             <span class="photo-card__time-online">(25 ЧАСОВ НАЗАД)</span></cite>
@@ -115,7 +141,11 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+          <img class="photo-card__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+        </picture>
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Максим
             <span class="photo-card__time-online">(40 ЧАСОВ НАЗАД)</span></cite>
@@ -129,7 +159,11 @@
         </div>
       </div>
       <div class="photo-card">
-        <img class="photo-card__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фото от пользователя">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+          <img class="photo-card__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"  width="280" height="180" alt="Фото от пользователя">
+        </picture>
         <blockquote class="photo-card__post-user">
           <cite class="photo-card__name-user">Надежда
             <span class="photo-card__time-online">(45 ЧАСОВ НАЗАД)</span></cite>
@@ -144,10 +178,17 @@
       </div>
     </section>
     <section class="photo-post">
-      <p class="page-container__text page-container__text_photo-post">Затмите их всех!</p>
-      <p class="page-container__text page-container__text_photo-post">Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="photo-post-text-wrapper">
+        <p class="page-container__text photo-post-text">Затмите их всех!</p>
+         <p class="page-container__text photo-post-text">Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
       <div class="photo-post-editor_wrapper">
-      <img class="photo-post__img" src="img/photo-road-mobile@1x.jpg" width="280" height="375" alt="Фото от пользователя">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="photo-post__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="375" alt="Фото от пользователя">
+        </picture>
+        <div class="photo-post-form">
        <form action="https://echo.htmlacademy.ru" method="post">
           <ul class="photo-post-editor">
             <li class="photo-post-editor-img photo-post-editor-img_active">
@@ -158,7 +199,7 @@
               <div class="photo-post-editor-range photo-post-editor-range_mobile">
                 <div class="bar">
                 <span class="toggle-btn toggle-btn_first-editor"></span>
-            </div>git
+            </div>
           </div>
             </li>
             <li class="photo-post-editor-img">
@@ -194,13 +235,16 @@
         <button class="photo-post-button photo-post-button_cancel"><span>Отмена</span></button>
        </form>
      </div>
+     </div>
     </section>
     </main>
   </div>
     <footer class="page-footer">
       <a class="page-footer__logo site-logo" href="#">
-
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
         <img class="site-logo-image" src="img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
+      </picture>
       </a>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">

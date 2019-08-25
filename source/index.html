@@ -11,7 +11,11 @@
       <div class="header-container">
       <nav class="page-nav">
         <div class="page-nav__header">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+          </picture>
           <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
         </div>
         <ul class="page-nav__list site-list">
@@ -176,7 +180,10 @@
   <section class="page-footer_first-page">
       <footer class="page-footer">
       <a class="page-footer__logo site-logo" href="#">
-        <img class="site-logo-image" src="img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="site-logo-image" src="img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
+        </picture>
       </a>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">
