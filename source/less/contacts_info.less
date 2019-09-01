@@ -1,5 +1,6 @@
 .contacts-info {
   .flex-mixin(@flex-direction:column);
+  margin-top: -39px;
 }
 
 .contacts-info__ways {
@@ -13,7 +14,7 @@
     background-size: 320px 100px;
     .size-mixin(320px;104px);
     position: absolute;
-    top: 330px;
+    top: 243px;
     z-index: 20;
   }
 }
@@ -22,7 +23,8 @@
   .font-mixin(@font-light;24px;29px);
   color: @text-color;
   text-align: center;
-  margin-bottom: 19px;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 
 .contacts-info__ways-name {
@@ -30,16 +32,14 @@
   color: @text-color;
   .flex-mixin(@flex-direction:column);
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 17px;
   padding-left: 3px;
-  padding-bottom: 20px;
 }
 
 .contacts-info__ways-data {
   text-decoration: none;
   .font-mixin(@font-light;24px;30px);
   color: @hover-color;
-  padding-top: 2px;
 }
 
 .contacts-info__ways-data-link:hover {
@@ -88,12 +88,13 @@
       background-size: 664px 100px;
       .size-mixin(664px;100px);
 
-      top: 209px;
+      top: 207px;
     }
   }
 
   .contacts-info__ways-name {
     width: 318px;
+    margin-bottom: 45px;
   }
 
   .map iframe {

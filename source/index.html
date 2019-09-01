@@ -16,7 +16,9 @@
             <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
             <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
           </picture>
-          <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
+          <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта">
+            <img class="page-nav__toggle-img" src="img/icon-menu-cross.svg" width="24" height="24" alt="Закрыть меню сайта">
+          </button>
         </div>
         <ul class="page-nav__list site-list">
           <li class="site-list__item site-list__item_active">
@@ -98,7 +100,7 @@
             <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/></svg>
         </div>
         <div class="effect-apps-info__wrapper">
-        <h2 class="effect-apps-info__title">Эффект на 24 часа!</h2>
+        <h2 class="effect-apps-info__title">Эффект <span>на 24 часа!</span></h2>
         <p class="effect-apps-info__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="effect-apps-info__link" href="#">Узнать больше об исследовании</a>
       </div>
@@ -132,32 +134,97 @@
             </li>
           </ul>
       </section>
-      <table class="tariffs-cost">
-        <tr>
-          <td></td>
-          <td class="tariffs-cost-name">БАЗА<span>1,99 USD</span></td>
-          <td class="tariffs-cost-name">СТАНДАРТ<span>3,99 USD</span></td>
-          <td class="tariffs-cost-name">АНЛИМ<span>9,99 USD</span></td>
-        </tr>
-        <tr>
-          <td class="tariffs-cost-feature">Розовый фильтр</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="tariffs-cost-feature">Смайлики</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="tariffs-cost-feature">Комментарии</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+      <div class="tariffs-cost-wrapper">
+        <table class="tariffs-cost">
+          <tr>
+            <td class=" tariffs-cost-name none tablet-no"></td>
+            <td class="tariffs-cost-name">БАЗА<span>1,99 USD</span></td>
+            <td class="tariffs-cost-name">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/bg-hit-tablet.svg">
+                <img class="tariffs-cost-bg-hit" src="img/bg-hit.svg" width="74" height="73" alt="Хит">
+              </picture>
+              <span class="tariffs-cost-text-hit">ХИТ</span>СТАНДАРТ<span>3,99 USD</span></td>
+            <td class="tariffs-cost-name">АНЛИМ<span>9,99 USD</span></td>
+          </tr>
+          <tr>
+            <td class="tariffs-cost-feature tablet-no">
+              <span class="tariffs-cost-feature-name">Розовый фильтр</span>
+            </td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Розовый фильтр</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30" height="30" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+              <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
+            </td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Розовый фильтр</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
+            </td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Розовый фильтр</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path  fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <td class="tariffs-cost-feature tablet-no"><span class="tariffs-cost-feature-name">Смайлики</span></td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Смайлики</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="27px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              </svg>
+            </td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Смайлики</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path  fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
+            </td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Смайлики</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path  fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
+            </td>
+          </tr>
+          <tr>
+            <td class="tariffs-cost-feature tablet-no"><span class="tariffs-cost-feature-name">Комментарии</span></td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Комментарии</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="27px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              </svg>
+            </td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Комментарии</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="27px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                <path fill="#f25b26" d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+              </svg>
+            </td>
+            <td class="tariffs-cost-feature-icon">
+              <span class="tariffs-cost-feature-name mobile-no">Комментарии</span>
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                <path  fill="#3dc644" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+              </svg>
+            </td>
+          </tr>
       </table>
+      <ul class="slider-review slider-table mobile-no">
+            <li>
+              <button class="slider-review-btn"></button>
+            </li>
+            <li>
+              <button class="slider-review-btn slider-review-btn_active"></button>
+            </li>
+            <li>
+              <button class="slider-review-btn"></button>
+            </li>
+          </ul>
+        </div>
       <section class="contacts-info">
         <p class="contacts-info__text">Остались вопросы?Свяжитесь с нами!</p>
         <ul class="contacts-info__ways">

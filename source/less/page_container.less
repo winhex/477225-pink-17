@@ -16,6 +16,7 @@
 
   display: block;
   .size-mixin(320px,396px);
+  margin-bottom: -1px;
 
   .bg-image-mixin("bg-back-mobile@1x.jpg");
   background-position: 50% 101%;
@@ -25,6 +26,7 @@
   content: " ";
   position: absolute;
   top: 109px;
+  left: 0;
   z-index: 10;
 
   display: block;
@@ -92,7 +94,7 @@
 
   .first-page-style::after {
     top: 72px;
-    right: 22px;
+    left: -20px;
 
     .size-mixin(657px,545px);
 
@@ -135,6 +137,7 @@
 
   .page-container {
     width: @desktop-width;
+    margin-bottom: 61px;
   }
 
   .first-page-style::before {
@@ -146,7 +149,7 @@
 
   .first-page-style::after {
     top: 210px;
-    right: 5px;
+    left: 146px;
 
     .size-mixin(1050px,645px);
 
@@ -165,5 +168,6 @@
 
   .page-container__text {
     width: 620px;
+    margin-bottom: 53px;
   }
 }

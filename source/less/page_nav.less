@@ -6,8 +6,9 @@
 .page-nav__header {
   .size-mixin(305px,45px);
 
-  padding-top: 15px;
+  padding-top: 11px;
   padding-left: 15px;
+  padding-bottom: 5px;
 
   background-color: @main-color;
 
@@ -16,15 +17,16 @@
 
 .page-nav__toggle {
   position: relative;
-  left: 154px;
+  left: 174px;
+  border: none;
+  background-color: transparent;
 
-  .size-mixin(50px,24px);
+  // .size-mixin(50px,24px);
 }
 
 .page-header__logo-image {
   position: relative;
-  top: -5px;
-  left: 5px;
+  left: 3px;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,16 +38,17 @@
   .page-nav__header {
     .size-mixin(645px,110px);
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .page-nav__toggle {
-    top: 26px;
-    left: 426px;
+    top: 28px;
+    left: 442px;
   }
 
   .page-header__logo-image {
     .size-mixin(150px;40px);
-    top: 45px;
+    top: 27px;
   }
 
   .site-logo__image {
@@ -60,6 +63,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    left: 75px;
+    z-index: 25;
+    position: absolute;
+    background-color: @bg-blue;
+    height: 110px;
+  }
+
+  .page-nav {
+    padding-top: 50px;
+  }
+
   .header-container {
     width: 1200px;
     margin: 0 auto;
@@ -70,15 +85,14 @@
   }
 
   .page-nav__header {
-    position: absolute;
-    top: 50px;
-    left: 125px;
-    z-index: 25;
-
-
-    .size-mixin(@desktop-width,110px);
     padding-top: 0;
+    padding-left: 0;
 
     background-color: transparent;
+  }
+
+  .page-header__logo-image {
+    top: -23px;
+    left: 129px;
   }
 }

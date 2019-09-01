@@ -168,20 +168,11 @@
     padding-bottom: 22px;
   }
 
-  .photo-post-editor li:last-child {
-    padding-bottom: 28px;
-  }
-
   .photo-post-editor-img svg {
     .size-mixin(25px;25px);
     margin-right: 27px;
     fill: @hover-color;
     padding-left: 8px;
-  }
-
-  .photo-post-editor-img:last-child svg {
-    .size-mixin(16px;16px);
-    padding-left: 14px;
   }
 
   .photo-post-editor-range {
@@ -192,10 +183,6 @@
   .photo-post-editor-range .bar {
     .size-mixin(204px;2px);
     margin-top: 4px;
-  }
-
-  .photo-post-editor-img:last-child .bar {
-    margin-top: 1px;
   }
 
   .toggle-btn {
@@ -222,13 +209,61 @@
   }
 
   .photo-post-button_cancel {
-     margin-bottom: 54px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 1199px) {
+   .photo-post-editor-img svg {
+      .size-mixin(25px;25px);
+      margin-right: 27px;
+      fill: @hover-color;
+      padding-left: 8px;
+  }
+
+  .photo-post-editor li:last-child {
+    padding-bottom: 28px;
+  }
+
+  .photo-post-editor-img:last-child svg {
+    .size-mixin(16px;16px);
+    padding-left: 14px;
+  }
+
+  .photo-post-editor-img:last-child .bar {
+    margin-top: 1px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .photo-post {
+    width: 940px;
+    margin-top: -20px;
+  }
+
+  .photo-post-form {
+    width: 345px;
+  }
+
+  .photo-post-text-wrapper {
+    padding-bottom: 66px;
+    padding-top: 1px;
+    width: 940px;
+  }
+
+  .photo-post__img {
+    margin-bottom: 54px;
+  }
+
+  .photo-post-editor {
+    margin-top: 41px;
+  }
+
   .photo-post-editor li {
     width: 410px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    margin-bottom: 0;
   }
 
   .photo-post-editor-range {
@@ -240,10 +275,41 @@
   }
 
   .photo-post-button {
-    width: 184px;
+    width: 180px;
+    margin-bottom: 0;
+    padding-left: 37px;
   }
 
-  .photo-post-editor-img {
+  .photo-post-editor-img svg {
     .size-mixin(44px;44px);
+    margin-right: 48px;
+    padding-left: 0;
+  }
+
+  .photo-post-editor li:last-child {
+    padding-bottom: 19px;
+  }
+
+  .photo-post-editor-img:last-child svg {
+    .size-mixin(34px;34px);
+    padding-left: 5px;
+    margin-right: 53px;
+  }
+
+  .photo-post-editor-img:last-child .bar {
+    margin-top: -1px;
+  }
+
+  .photo-post-editor-range .bar {
+    margin-top: 0;
+  }
+
+  .photo-post-button-wrapper {
+    .flex-mixin();
+    width: 428px;
+    position: relative;
+    right: 71px;
+    top: 88px;
+    justify-content: space-between;
   }
 }

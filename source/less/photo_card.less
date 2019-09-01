@@ -186,7 +186,7 @@
 
   .photo-card__post-user_wrapper {
     .flex-mixin(@flex-direction: column-reverse);
-    align-items:center;
+    align-items: center;
     width: 620px;
     margin-top: -7px;
     background-color: @bg-grey-color;
@@ -195,11 +195,35 @@
 
 @media (min-width: @desktop-width) {
   .photo-card-list {
+    width: 960px;
+  }
+
+  .photo-card {
+    margin-bottom: 55px;
+  }
+
+  .photo-card__post-user_wrapper {
     width: 940px;
+  }
+
+  .photo-card__post-user {
+    margin-top: 16px;
   }
 
   .photo-card_best {
     width: @desktop-width;
+    margin-bottom: 50px;
+
+    .photo-card__post-user {
+      width: 883px;
+      margin-right: 0;
+      margin-bottom: -37px;
+    }
+
+    .like-account {
+      margin-right: 25px;
+      margin-top: 25px;
+    }
   }
 
   .photo-card_best .photo-card__img_wrapper {
@@ -212,5 +236,10 @@
 
   .photo-card__img_best {
     .size-mixin(1200px;506px);
+  }
+
+  .photo-card__panorama-best {
+    left: 930px;
+    top: 54px;
   }
 }
