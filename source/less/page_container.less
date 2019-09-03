@@ -16,6 +16,7 @@
 
   display: block;
   .size-mixin(320px,396px);
+  margin-bottom: -1px;
 
   .bg-image-mixin("bg-back-mobile@1x.jpg");
   background-position: 50% 101%;
@@ -25,6 +26,7 @@
   content: " ";
   position: absolute;
   top: 109px;
+  left: 0;
   z-index: 10;
 
   display: block;
@@ -35,7 +37,6 @@
 
 .page-container__title-wrapper {
   .size-mixin(320px,170px);
-  margin: 0;
   .flex-mixin();
   justify-content: center;
 
@@ -52,6 +53,10 @@
   text-align: center;
   width: 200px;
   padding-top: 13px;
+}
+
+.page-container__title_tender {
+  width: 230px;
 }
 
 .page-container__text {
@@ -71,10 +76,12 @@
   }
 }
 
-.page-container__text_photo-post {
-  margin: 0;
-  padding: 0;
-  background-color: @white-color;
+.page-container__text_tender {
+  width: 280px;
+}
+
+.photo-post-text span {
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
@@ -97,7 +104,7 @@
 
   .first-page-style::after {
     top: 72px;
-    right: 22px;
+    left: -20px;
 
     .size-mixin(657px,545px);
 
@@ -119,15 +126,19 @@
     padding-top: 36px;
   }
 
+  .page-container__title_tender {
+  width: 480px;
+}
+
   .page-container__text {
     width: 500px;
-    padding-top: 98px;
-    margin-bottom: 57px;
+    padding-top: 74px;
+    margin-bottom: 48px;
 
     .font-mixin(@font-normal,18px,30px);
 
     span {
-      display: block;
+      display: inline-block;
     }
   }
 }
@@ -140,6 +151,7 @@
 
   .page-container {
     width: @desktop-width;
+    margin-bottom: 61px;
   }
 
   .first-page-style::before {
@@ -151,24 +163,35 @@
 
   .first-page-style::after {
     top: 210px;
-    right: 5px;
+    left: 146px;
 
     .size-mixin(1050px,645px);
 
     .bg-image-mixin("iphone-hand-desktop@1x.png");
   }
 
+
   .page-container__title-wrapper {
-    .size-mixin(1200px,395px);
+    .size-mixin(1200px,393px);
 
     .bg-image-mixin("bg-back-desktop@1x.jpg");
   }
 
   .page-container__title {
-    width: 300px;
+    width: 354px;
+    padding-top: 138px;
+  }
+
+  .page-container__title_tender {
+    width: 758px;
   }
 
   .page-container__text {
     width: 620px;
+    margin-bottom: 61px;
+  }
+
+   .page-container__text_tender {
+width: 776px;
   }
 }

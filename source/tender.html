@@ -5,6 +5,11 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div class="header-container">
@@ -12,9 +17,13 @@
       <nav class="page-nav">
         <div class="page-nav__header">
           <a class="page-header__logo site-logo" href="index.html">
-            <img class="site-logo__image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="site-logo__image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+              </picture>
           </a>
-          <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
+          <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"><img class="page-nav__toggle-img" src="img/icon-menu-cross.svg" width="24" height="24" alt="Закрыть меню сайта"></button>
         </div>
         <ul class="page-nav__list site-list">
           <li class="site-list__item">
@@ -27,7 +36,7 @@
             <a href="#">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a href="https://htmlacademy.ru">Html academy</a>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -36,9 +45,9 @@
   <div class="main-contaiter">
     <main class="page-container">
     <div class="page-container__title-wrapper">
-      <h1 class="page-container__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-container__title page-container__title_tender">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
-      <p class="page-container__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+      <p class="page-container__text page-container__text_tender">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         <span>Пожалуйста, заполните форму ниже:</span>
       </p>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -61,11 +70,11 @@
           <legend class="personal-data-title personal-data-title_achievement">ВАШИ БЕЗБАШЕННЫЕ ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
           <div class="personal-data_achievement">
           <label class="personal-data-checkbox">
-            <input id="checkbox-1" type="checkbox" name="achievement" value="Сделал селфи с акулой">
+            <input id="checkbox-1" type="checkbox" name="achievement" value="Сделал селфи с акулой" checked>
             <span></span>Сделал селфи с акулой
           </label>
           <label class="personal-data-checkbox">
-            <input id="checkbox-2" type="checkbox" name="achievement" value="Обгорел на пляже">
+            <input id="checkbox-2" type="checkbox" name="achievement" value="Обгорел на пляже" checked>
             <span></span>Обгорел на пляже
           </label>
           <label class="personal-data-checkbox">
@@ -77,7 +86,7 @@
             <span></span>Накупил сувениров
           </label>
           <label class="personal-data-checkbox">
-            <input id="checkbox-5" type="checkbox" name="achievement" value="Удержал башню">
+            <input id="checkbox-5" type="checkbox" name="achievement" value="Удержал башню" checked>
             <span></span>Удержал башню
          </label>
          <label class="personal-data-checkbox">
@@ -103,7 +112,7 @@
           <legend class="personal-data-title">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?</legend>
           <div class="personal-data_apps">
            <label class="personal-data-radio">
-            <input id="radio-1" name="apps" type="radio" value="Pink для iOS"><span></span>Pink для iOS
+            <input id="radio-1" name="apps" type="radio" value="Pink для iOS" checked><span></span>Pink для iOS
             </label>
             <label class="personal-data-radio">
             <input id="radio-2" name="apps" type="radio" value="Pink на Android"><span></span>Pink на Android
@@ -120,7 +129,7 @@
         </fieldset>
         <div class="page-container__button">
           <button class="page-container__form-button" type="submit"><span>ОТПРАВИТЬ ФОРМУ</span></button>
-          <p><sup>&#9913;</sup> - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+          <p><sup>&#9913;</sup> - ОБЯЗАТЕЛЬНЫЕ<span class="desktop-visible" >ДЛЯ ЗАПОЛНЕНИЯ</span> ПОЛЯ</p>
         </div>
       </section>
         </form>
@@ -129,7 +138,10 @@
   </div>
     <footer class="page-footer">
       <a class="page-footer__logo site-logo" href="#">
-        <img class="site-logo-image" src="img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
+         <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="site-logo-image" src="img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
+        </picture>
       </a>
       <ul class="page-footer__list social-list">
         <li class="social-list__item">

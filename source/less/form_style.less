@@ -1,7 +1,11 @@
 .page-container__form {
   .flex-mixin(@flex-direction:column);
-  margin-top: -51px;
+  margin-top: -18px;
   align-items: center;
+}
+
+.desktop-visible {
+  display: none;
 }
 
 .personal-data {
@@ -17,9 +21,9 @@
 .personal-data-text {
   .font-mixin(@font-normal;14px;30px);
   color: @hover-color;
-  margin-bottom: 2px;
-  margin-left: 22px;
-  margin-top: -1px;
+  margin-bottom: 6px;
+  margin-left: 21px;
+  margin-top: -3px;
 }
 
 .personal-data-input {
@@ -29,15 +33,17 @@
   padding-top: 15px;
   padding-bottom: 15px;
   width: 254px;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   outline: none;
 
   &:hover {
     border-color: @black-color;
+    z-index: 11;
   }
 
   &:focus {
     border-color: @hover-color;
+    z-index: 11;
   }
 }
 
@@ -60,8 +66,9 @@
 .personal-data_bg-grey {
   background-color: @bg-grey-color;
   top: -2px;
-  width: 320px;
-  margin-bottom: 13px;
+  width: 296px;
+  margin-bottom: 25px;
+  padding-bottom: 0;
 }
 
 .personal-data-title {
@@ -81,7 +88,7 @@
 .personal-data_achievement {
   .flex-mixin(@flex-direction: column);
   align-items: flex-start;
-  margin-left: 18px;
+  margin-left: 6px;
 }
 
 .personal-data-checkbox {
@@ -127,7 +134,8 @@
 
 .personal-data_apps {
   .flex-mixin(@flex-direction: column);
-  margin-left: 19px;
+  margin-left: 7px;
+  padding-bottom: 2px;
 }
 
 .personal-data-radio {
@@ -172,12 +180,12 @@
 
 .personal-data-input-feedback {
   .size-mixin(256px;167px);
-  margin-bottom: 24px;
+  margin-bottom: 38px;
 }
 
 .personal-data-title_feedback {
-  top: 15px;
-  margin-bottom: 26px;
+  top: 12px;
+  margin-bottom: 22px;
 }
 
 // .personal-data-title_feedback::-webkit-input-placeholder {
@@ -251,7 +259,7 @@
     .flex-mixin();
     align-items: center;
     margin-bottom: 51px;
-    padding-left: 20px;
+    padding-left: 22px;
     padding-right: 20px;
   }
 
@@ -269,6 +277,10 @@
 
   .personal-data:nth-child(4) {
     order: -2;
+
+     .personal-data-title {
+    width: 368px;
+     }
   }
 
   .personal-data:nth-child(1) {
@@ -277,6 +289,9 @@
 
   .personal-data:nth-child(3) {
     order: -1;
+     .personal-data-title {
+    width: 260px;
+     }
   }
 
    .page-container__button {
@@ -287,7 +302,9 @@
     background-color: transparent;
     width: 590px;
     align-self: center;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
+    margin-top: -3px;
+    padding-bottom: 10px;
   }
 
   .personal-data:nth-child(1) {
@@ -301,12 +318,14 @@
   .personal-data_contact {
     width: 590px;
     margin-bottom: 61px;
+    padding-bottom: 0px;
   }
 
   .personal-data-title {
     top: 0;
     margin-bottom: 45px;
     width: 335px;
+    background-color: @white-color;
   }
 
   .personal-data-title_feedback {
@@ -325,6 +344,9 @@
 
   .personal-data-wrapper_contact .personal-data-text {
     order: 2;
+    margin-bottom: 29px;
+    margin-left: 22px;
+    margin-top: 8px;
   }
 
   .personal-data-wrapper_contact .personal-data-input {
@@ -334,7 +356,7 @@
   }
 
   .personal-data_apps {
-    margin-left: 47px;
+    margin-left: 62px;
   }
 
   .personal-data-checkbox span {
@@ -347,17 +369,18 @@
 
   .personal-data-text_tel {
     margin-bottom: 40px;
+    position: relative;
 
     &::before {
       content: "";
       display: block;
-      .size-mixin(60px;60px);
+      .size-mixin(62px;64px);
       .bg-image-mixin("icon-phone.svg");
       background-position: 50% 50%;
       background-color: @bg-grey-color;
       position: absolute;
-      left: 420px;
-      bottom: 39px;
+      left: 418px;
+      bottom: 38px;
       z-index: 10;
     }
   }
@@ -369,13 +392,13 @@
   .personal-data-text_email::before {
     content: "";
     display: block;
-    .size-mixin(60px;60px);
+    .size-mixin(62px;64px);
     .bg-image-mixin("icon-mail.svg");
     background-position: 50% 50%;
     background-color: @bg-grey-color;
     position: absolute;
-    left: 421px;
-    bottom: 43px;
+    left: 496px;
+    bottom: 67px;
     z-index: 10;
   }
 
@@ -385,8 +408,8 @@
   }
 
   .personal-data-input-feedback {
-    .size-mixin(477px;161px);
-    margin-left: 43px;
+    .size-mixin(478px;162px);
+    margin-left: 45px;
     margin-bottom: 40px;
   }
 
@@ -394,7 +417,7 @@
     width: 620px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 42px;
+    margin-bottom: 26px;
 
     p {
       margin-top: 0;
@@ -405,13 +428,27 @@
     padding-left: 57px;
     padding-right: 58px;
   }
+
+  .one {
+    .flex-mixin(@flex-direction:column);
+    align-items: center;
+    margin-top: -14px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+.desktop-visible {
+  display: inline-block;
+}
+
+.page-container__button p {
+  width: 301px;
+}
+
   .one {
-    .flex-mixin();
+    flex-direction: row;
     justify-content: space-around;
-    margin-bottom: -9px;
+    margin-bottom: -18px;
   }
 
   .page-container__form {
@@ -427,22 +464,25 @@
 
   .personal-data_bg-grey {
     width: 405px;
+    margin-top: -7px;
   }
+
 
   .personal-data_contact {
     width: 940px;
     padding-left: 22px;
     padding-right: 20px;
+    margin-top: -3px;
+    margin-bottom: 67px;
   }
 
-  .personal-data-title {
-    margin-bottom: 29px;
-  }
 
   .personal-data-wrapper_contact .personal-data-input {
     width: 351px;
     flex-grow: 0;
     position: relative;
+    margin-left: -5px;
+    margin-top: -2px;
   }
 
   .personal-data-text_tel {
@@ -450,30 +490,62 @@
   }
 
   .personal-data-text_tel::before {
-    left: 370px;
-    bottom: 51px;
+    left: 292px;
+    bottom: 38px;
   }
 
   .personal-data-text_email::before {
-    left: 815px;
+    left: 813px;
     bottom: 51px;
   }
 
   .personal-data-wrapper_contact .personal-data-text {
     margin-top: 8px;
-    margin-left: 18px;
+    margin-left: 16px;
+    margin-bottom: 31px;
   }
 
 
   .personal-data_achievement {
-    width: 940px;
     .flex-mixin();
     flex-wrap: wrap;
+    margin-left: 0;
+    position: relative;
+    left: 55px;
+  }
+
+  .personal-data:nth-child(2) {
+    width: 940px;
+    padding: 0;
+        padding-bottom: 15px;
   }
 
   .personal-data-checkbox {
-    width: 280px;
-    margin-right: 30px;
+    width: 261px;
+    margin-right: 49px;
+  }
+
+  .personal-data-checkbox:nth-child(1) {
+    order: 0;
+  }
+
+   .personal-data-checkbox:nth-child(3) {
+    order: 0;
+  }
+
+  .personal-data-checkbox:nth-child(4) {
+    order: 2;
+  }
+  .personal-data-checkbox:nth-child(2) {
+    order: 1;
+  }
+
+   .personal-data-checkbox:nth-child(5) {
+    order: 0;
+  }
+
+  .personal-data-checkbox:nth-child(6) {
+    order: 2;
   }
 
   .personal-data_feedback {
@@ -491,11 +563,15 @@
   .page-container__button {
     width: 940px;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: -44px;
   }
 
   .personal-data:nth-child(1) {
     position: relative;
     right: 36px;
+  }
+
+  .personal-data-title_achievement {
+    margin-bottom: 44px;
   }
 }
