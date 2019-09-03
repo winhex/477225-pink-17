@@ -73,12 +73,17 @@
 @media (min-width: @desktop-width) {
   .effect-apps-info {
     align-items: center;
+    background-color: @bg-grey-color;
+    .flex-mixin();
+    justify-content: center;
+    width: @desktop-width;
+    margin-bottom: 191px;
   }
 
   .effect-apps-info__wrapper {
     position: relative;
     right: 61px;
-    bottom: 21px;
+    bottom: 1px;
   }
 
   .effect-apps-info__title {
@@ -87,12 +92,13 @@
     padding-top: 0;
     padding-left: 0;
     margin-bottom: 1px;
+    margin-top: 0;
   }
 
   .effect-apps-info__img {
-    .size-mixin(438px;476px);
+    .size-mixin(438px;436px);
     left: 13px;
-    top: 37px;
+    top: 24px;
     bottom: 0;
 
     span {
@@ -101,6 +107,10 @@
       .size-mixin(190px;190px);
       .font-mixin(@font-bold;120px;172px);
     }
+  }
+
+  .effect-apps-info__img-timer path {
+    fill: #dedede;
   }
 
   .effect-apps-info__text {

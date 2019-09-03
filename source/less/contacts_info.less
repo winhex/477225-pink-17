@@ -103,6 +103,10 @@
 }
 
 @media (min-width: @desktop-width) {
+.contacts-info {
+  margin-top: -3px;
+}
+
   .map {
     margin-top: -9px;
   iframe {
@@ -119,6 +123,12 @@
 
   .contacts-info__ways {
     margin-top: 32px;
+
+    &::after {
+      background-size: cover;
+      .size-mixin(1204px;125px);
+      top: 127px;
+    }
   }
 
   .contacts-info__ways-name:nth-child(2) {

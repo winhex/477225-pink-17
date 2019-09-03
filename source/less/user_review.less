@@ -122,6 +122,7 @@
 
   .user-review {
     padding-top: 4px;
+    margin-bottom: 27px;
 
     &::before {
       content: "";
@@ -153,13 +154,13 @@
 
   .user-review__btn-arrow-left {
     position: absolute;
-    left: -56px;
-    top: 87px;
+    left: -85px;
+    top: 90px;
   }
 
   .user-review__btn-arrow-right {
     position: absolute;
-    right: -73px;
+    right: -85px;
     bottom: 142px;
   }
 
@@ -177,5 +178,10 @@
 
   .user-review__data {
     .font-mixin(@font-normal;18px;30px);
+  }
+
+  .user-review::after {
+    width: 1210px;
+    top:291px;
   }
 }

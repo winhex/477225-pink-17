@@ -5,6 +5,11 @@
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div class="header-container">
@@ -18,7 +23,7 @@
                 <img class="site-logo__image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
               </picture>
             </a>
-            <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"></button>
+            <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"><img class="page-nav__toggle-img" src="img/icon-menu-cross.svg" width="24" height="24" alt="Закрыть меню сайта"></button>
           </div>
           <ul class="page-nav__list site-list">
             <li class="site-list__item">
@@ -31,7 +36,7 @@
               <a href="tender.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru">Html academy</a>
+              <a href="https://htmlacademy.ru">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -179,8 +184,9 @@
     </section>
     <section class="photo-post">
       <div class="photo-post-text-wrapper">
-        <p class="page-container__text photo-post-text">Затмите их всех!</p>
-         <p class="page-container__text photo-post-text">Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="page-container__text photo-post-text">Затмите их всех!
+          <span>Выкладывайте все, что накопилось в телефоне!</span>
+        </p>
     </div>
       <div class="photo-post-editor_wrapper">
         <picture>
