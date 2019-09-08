@@ -1,8 +1,8 @@
 .downloads {
-  display: flex;
-  flex-direction: column;
-  padding-top: 27px;
+  .flex-mixin(@flex-direction: column);
+
   width: 320px;
+  padding-top: 27px;
 
   background-color: @bg-downloads-color;
 }
@@ -13,9 +13,10 @@
   left: 11px;
   z-index: 15;
 
-  width: 300px;
+  width: 297px;
 
   .font-mixin(@font-light,24px,29px);
+
   text-align: center;
   color: @white-color;
 }
@@ -51,17 +52,16 @@
   }
 }
 
-.downloads__icon-list {
-  display: flex;
+.downloads-list {
+  .flex-mixin();
   justify-content: center;
   padding-left: 34px;
 
   list-style: none;
 }
 
-.downloads__item {
-  display: flex;
-  flex-direction: column;
+.downloads-list__item {
+  .flex-mixin(@flex-direction: column);
   justify-content: flex-end;
   margin-top: -15px;
   margin-right: 34px;
@@ -73,7 +73,7 @@
   margin-bottom: 30px;
   margin-left: 20px;
 
-  .font-mixin(@font-light,14px,24px);
+ .font-mixin(@font-light,14px,24px);
   text-align: center;
   color: @white-color;
 }
@@ -113,7 +113,7 @@
     padding-left: 26px;
   }
 
-  .downloads__icon-list {
+  .downloads-list {
     padding-left: 53px;
   }
 
@@ -129,27 +129,29 @@
   .downloads {
     top: 220px;
     left: 85px;
+
     width: 331px;
   }
 
   .downloads__slogan {
-    width: 235px;
     bottom: 10px;
+
+    width: 235px;
     margin-bottom: 50px;
 
     .font-mixin(@font-light,50px,60px);
   }
 
   .downloads__link-button {
-    .font-mixin(@font-bold;21px;18px);
-
-    margin-left: 44px;
     margin-bottom: 66px;
+    margin-left: 44px;
+
+    .font-mixin(@font-bold;21px;18px);
   }
 
-  .downloads__icon-list {
-    padding-left: 90px;
+  .downloads-list {
     margin-bottom: 34px;
+    padding-left: 90px;
   }
 
   .downloads__text {

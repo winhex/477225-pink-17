@@ -3,34 +3,35 @@
 }
 
 .page-footer {
-  display: flex;
-  flex-direction: column;
+  .flex-mixin(@flex-direction: column);
   align-items: center;
   width: 320px;
   margin: 0 auto;
 }
 
 .page-footer__icon {
-  .size-mixin(40px;44px);
   position: relative;
+
+  .size-mixin(40px;44px);
 
   &:hover path {
     fill: @black-color;
   }
 
   &:active path {
-    fill: @black-color;
     opacity: 0.3;
+
+    fill: @black-color;
   }
 }
 
 .social-list {
-  display: flex;
-  margin-bottom: 23px;
-  margin-right: 10px;
-  padding-left: 0;
-  width: 175px;
+  .flex-mixin();
   justify-content: space-between;
+  width: 175px;
+  margin-right: 10px;
+  margin-bottom: 23px;
+  padding-left: 0;
 
   list-style: none;
 }
@@ -59,21 +60,23 @@
 }
 
 .page-footer__info-developer {
+  position: relative;
+  top: 10px;
+  right: -4px;
+
   .flex-mixin();
   align-items: center;
   margin-bottom: 52px;
-  position: relative;
-  right: -4px;
-  top: 10px;
 
   .font-mixin(@font-normal,14px,18px);
 }
 
 .page-footer__icon {
-  margin-left: 10px;
   position: relative;
   top: 3px;
   right: 1px;
+
+  margin-left: 10px;
 
   path {
     fill: @hover-color;
@@ -98,11 +101,11 @@
     justify-content: space-between;
     align-items: center;
     width: 620px;
-    padding-right: 20px;
-    padding-left: 20px;
     margin-top: 0;
     padding-top: 26px;
+    padding-right: 20px;
     padding-bottom: 40px;
+    padding-left: 20px;
   }
 
   .page-footer__logo {
@@ -111,33 +114,36 @@
   }
 
   .social-list {
-    display: flex;
+    .flex-mixin();
+
     margin-bottom: 0;
   }
 
   .page-footer__info-developer {
-    margin-bottom: 0;
-    left: 9px;
     top: 9px;
+    left: 9px;
+
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-footer {
+    justify-content: space-between;
     width: 940px;
     padding-bottom: 3px;
-    justify-content: space-between;
   }
 
   .page-footer_first-page {
-    margin-top: 26px;
     width: @desktop-width;
+    margin-top: -23px;
   }
 
   .page-footer__info-developer {
-    .font-mixin(@font-normal,18px,30px);
-    left: 11px;
     top: 4px;
+    left: 11px;
+
+    .font-mixin(@font-normal,18px,30px);
   }
 
   .page-footer__icon {
@@ -146,7 +152,7 @@
   }
 
   .social-list {
-    margin-left: 22px;
     margin-top: 6px;
+    margin-left: 22px;
   }
 }

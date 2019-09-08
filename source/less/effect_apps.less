@@ -7,35 +7,39 @@
     .flex-mixin();
     align-items: flex-end;
     margin-bottom: 161px;
+
     background-color: @white-color;
   }
 
   .effect-apps-info__wrapper {
-    .flex-mixin(@flex-direction:column);
+    .flex-mixin(@flex-direction: column);
   }
 
   .effect-apps-info__img {
-    .size-mixin(238px;276px);
-    .flex-mixin();
     position: relative;
     right: 22px;
     bottom: 3px;
 
+    .flex-mixin();
+    .size-mixin(238px;276px);
 
     & span {
-      .flex-mixin();
-      justify-content: center;
       position: absolute;
       top: 92px;
       left: 20px;
+
+      .flex-mixin();
+      justify-content: center;
       padding: 15px;
       .size-mixin(140px;140px);
+
       .font-mixin(@font-bold;96px;122px);
-      color: @hover-color;
-      border: 15px solid @hover-color;
-      border-radius: 50%;
       vertical-align: middle;
       text-align: center;
+      color: @hover-color;
+
+      border: 15px solid @hover-color;
+      border-radius: 50%;
     }
 
     & svg {
@@ -45,11 +49,12 @@
 
   .effect-apps-info__title {
     width: 175px;
-    .font-mixin(@font-bold;30px;36px);
-    color: @black-color;
+    margin-bottom: -3px;
     padding-top: 71px;
     padding-left: 49px;
-    margin-bottom: -3px;
+
+    .font-mixin(@font-bold;30px;36px);
+    color: @black-color;
 
     span {
       display: inline-block;
@@ -57,27 +62,30 @@
   }
 
   .effect-apps-info__text {
-    .font-mixin(@font-light;14px;24px);
-    color: @text-color;
     width: 286px;
     padding-left: 49px;
+
+    .font-mixin(@font-light;14px;24px);
+    color: @text-color;
   }
 
   .effect-apps-info__link {
-    color: @hover-color;
-    .font-mixin(@font-light;14px;14px);
     padding-left: 49px;
+
+    .font-mixin(@font-light;14px;14px);
+    color: @hover-color;
   }
 }
 
 @media (min-width: @desktop-width) {
   .effect-apps-info {
-    align-items: center;
-    background-color: @bg-grey-color;
     .flex-mixin();
     justify-content: center;
+    align-items: center;
     width: @desktop-width;
     margin-bottom: 191px;
+
+    background-color: @bg-grey-color;
   }
 
   .effect-apps-info__wrapper {
@@ -88,23 +96,25 @@
 
   .effect-apps-info__title {
     width: 300px;
-
+    margin-top: 0;
+    margin-bottom: 1px;
     padding-top: 0;
     padding-left: 0;
-    margin-bottom: 1px;
-    margin-top: 0;
   }
 
   .effect-apps-info__img {
-    .size-mixin(438px;436px);
-    left: 13px;
     top: 24px;
     bottom: 0;
+    left: 13px;
+
+    .size-mixin(438px;436px);
 
     span {
       top: 71px;
       left: 22px;
+
       .size-mixin(190px;190px);
+
       .font-mixin(@font-bold;120px;172px);
     }
   }
@@ -114,14 +124,16 @@
   }
 
   .effect-apps-info__text {
-    .font-mixin(@font-normal;18px;30px);
     width: 522px;
-    padding-left: 0;
     margin-bottom: 37px;
+    padding-left: 0;
+
+    .font-mixin(@font-normal;18px;30px);
   }
 
   .effect-apps-info__link {
-    .font-mixin(@font-normal;18px;18px);
     padding-left: 0;
+
+    .font-mixin(@font-normal;18px;18px);
   }
 }

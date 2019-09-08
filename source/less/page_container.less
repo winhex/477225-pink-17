@@ -5,7 +5,8 @@
 
 .page-container {
   position: relative;
-  .flex-mixin(@flex-direction:column);
+
+  .flex-mixin(@flex-direction: column);
   align-items: center;
 }
 
@@ -20,6 +21,11 @@
 
   .bg-image-mixin("bg-back-mobile@1x.jpg");
   background-position: 50% 101%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .bg-image-mixin("bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .first-page-style::after {
@@ -33,26 +39,39 @@
   .size-mixin(258px,286px);
 
   .bg-image-mixin("iphone-hand-mobile@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .bg-image-mixin("iphone-hand-mobile@2x.png");
+    background-size: cover;
+  }
 }
 
+
 .page-container__title-wrapper {
-  .size-mixin(320px,170px);
   .flex-mixin();
   justify-content: center;
 
-  .font-mixin(@font-light,24px,29px);
+  .size-mixin(320px,170px);
 
   .bg-image-mixin("bg-back-mobile@1x.jpg");
-  background-position: 0% 23%;
+  background-position: 0 23%;
+
+  .font-mixin(@font-light,24px,29px);
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .bg-image-mixin("bg-back-mobile@1x.jpg");
+    background-size: cover;
+  }
 }
 
 .page-container__title {
-  .font-mixin(@font-light,24px,29px);
-  font-weight: 400;
-  color: @white-color;
-  text-align: center;
   width: 200px;
   padding-top: 13px;
+
+  .font-mixin(@font-light,24px,29px);
+  font-weight: 400;
+  text-align: center;
+  color: @white-color;
 }
 
 .page-container__title_tender {
@@ -60,14 +79,14 @@
 }
 
 .page-container__text {
+  align-self: center;
+  width: 245px;
   padding-top: 31px;
   padding-bottom: 35px;
 
   .font-mixin(@font-normal,14px,30px);
-  color: @text-color;
   text-align: center;
-  align-self: center;
-  width: 245px;
+  color: @text-color;
 
   background-color: @white-color;
 
@@ -97,9 +116,12 @@
   .first-page-style::before {
     .size-mixin(660px,618px);
 
+    .bg-image-mixin("bg-back-tablet@1x.jpg");
     background-position: 50% 100%;
 
-    .bg-image-mixin("bg-back-tablet@1x.jpg");
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .bg-image-mixin("bg-back-tablet@2x.jpg");
+    }
   }
 
   .first-page-style::after {
@@ -109,31 +131,39 @@
     .size-mixin(657px,545px);
 
     .bg-image-mixin("iphone-hand-tablet@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .bg-image-mixin("iphone-hand-tablet@2x.png");
+    }
   }
 
   .page-container__title-wrapper {
     .size-mixin(660px,329px);
 
-
     .bg-image-mixin("bg-back-tablet@1x.jpg");
     background-position: 50% 28%;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .bg-image-mixin("bg-back-tablet@2x.jpg");
+    }
   }
 
   .page-container__title {
-    .font-mixin(@font-light,50px,60px);
-    text-align: center;
     width: 354px;
     padding-top: 36px;
+
+    .font-mixin(@font-light,50px,60px);
+    text-align: center;
   }
 
   .page-container__title_tender {
-  width: 480px;
-}
+    width: 480px;
+  }
 
   .page-container__text {
     width: 500px;
-    padding-top: 74px;
     margin-bottom: 48px;
+    padding-top: 74px;
 
     .font-mixin(@font-normal,18px,30px);
 
@@ -158,7 +188,12 @@
     .size-mixin(1200px,854px);
 
     .bg-image-mixin("bg-back-desktop@1x.jpg");
+    background-position: 50% 0;
     background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .bg-image-mixin("bg-back-desktop@2x.jpg");
+    }
   }
 
   .first-page-style::after {
@@ -168,6 +203,10 @@
     .size-mixin(1050px,645px);
 
     .bg-image-mixin("iphone-hand-desktop@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .bg-image-mixin("iphone-hand-desktop@2x.png");
+    }
   }
 
 
@@ -175,6 +214,11 @@
     .size-mixin(1200px,393px);
 
     .bg-image-mixin("bg-back-desktop@1x.jpg");
+    background-position: 50% 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      .bg-image-mixin("bg-back-desktop@2x.jpg");
+    }
   }
 
   .page-container__title {
@@ -188,10 +232,10 @@
 
   .page-container__text {
     width: 620px;
-    margin-bottom: 61px;
+    margin-bottom: 56px;
   }
 
-   .page-container__text_tender {
-width: 776px;
+  .page-container__text_tender {
+    width: 776px;
   }
 }
