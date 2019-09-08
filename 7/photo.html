@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+  <html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Пинк</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+      </script>
+      <script src="js/picturefill.min.js" async></script>
+      <base href="https://htmlacademy-adaptive.github.io/477225-pink-17/7/">
+</head>
+    <body>
+      <header class="page-header">
+        <div class="page-header__container">
+          <nav class="page-nav">
+            <div class="page-nav__header">
+              <a class="page-header__logo site-logo" href="index.html">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                  <img class="site-logo__image" src="img/logo-pink-white-mobile.svg" width="78" height="29" alt="Логотип приложения Пинк">
+                </picture>
+              </a>
+              <button class="page-nav__toggle" type="button" aria-label="Открыть меню сайта"><img class="page-nav__toggle-img" src="img/icon-menu-cross.svg" width="24" height="24" alt="Закрыть меню сайта"></button>
+            </div>
+            <ul class="page-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item site-list__item_active">
+                <a href="#">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a href="tender.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="https://htmlacademy.ru">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="main-contaiter">
+        <main class="page-container">
+          <div class="page-container__title-wrapper">
+            <h1 class="page-container__title">Фотографии пользователей</h1>
+          </div>
+          <p class="page-container__text">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+          <section class="photo-card-list">
+            <h2 class="visually-hidden">Галерея фотографий пользователей</h2>
+            <div class="photo-card photo-card_best">
+              <span class="photo-card__panorama-best">ПАНОРАМА ДНЯ</span>
+              <div class="photo-card__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="photo-card__img photo-card__img_best" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фото от пользователя">
+                </picture>
+              </div>
+              <div class="photo-card__post-user-wrapper">
+                <blockquote class="photo-card__post-user">
+                  <cite class="photo-card__name-user">Анна
+                    <span class="photo-card__time-online">(5 МИНУТ НАЗАД)</span>
+                  </cite>
+                  <p class="photo-card__text">Прыгать или нет?Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                  </p>
+                </blockquote>
+                <div class="like-account">
+                  <button class="like-account__button" aria-label="Нажми Понравилось"></button>
+                  <p class="like-account__text">НРАВИТСЯ:
+                    <span class="like-account__numbers">215</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="photo-card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo-card__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+              </picture>
+              <blockquote class="photo-card__post-user">
+                <cite class="photo-card__name-user">Левон
+                  <span class="photo-card__time-online">(5 ЧАСОВ НАЗАД)</span>
+                </cite>
+                <p class="photo-card__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              </blockquote>
+              <div class="like-account">
+                <button class="like-account__button" aria-label="Нажми Понравилось"></button>
+                <p class="like-account__text">НРАВИТСЯ:
+                  <span class="like-account__numbers">356</span>
+                </p>
+              </div>
+            </div>
+            <div class="photo-card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo-card__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+              </picture>
+              <blockquote class="photo-card__post-user">
+                <cite class="photo-card__name-user">Антон
+                  <span class="photo-card__time-online">(12 ЧАСОВ НАЗАД)</span>
+                </cite>
+                <p class="photo-card__text">Соседи будут рады!</p>
+              </blockquote>
+              <div class="like-account">
+                <button class="like-account__button" aria-label="Нажми Понравилось"></button>
+                <p class="like-account__text">НРАВИТСЯ:
+                  <span class="like-account__numbers">666</span>
+                </p>
+              </div>
+            </div>
+            <div class="photo-card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo-card__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+              </picture>
+              <blockquote class="photo-card__post-user">
+                <cite class="photo-card__name-user">Борис
+                  <span class="photo-card__time-online">(20 ЧАСОВ НАЗАД)</span>
+                </cite>
+                <p class="photo-card__text">Здесь могла бы быть ваша цитата о высоком и вечном.</p>
+              </blockquote>
+              <div class="like-account">
+                <button class="like-account__button" aria-label="Нажми Понравилось"></button>
+                <p class="like-account__text">НРАВИТСЯ:
+                  <span class="like-account__numbers">215</span>
+                </p>
+              </div>
+            </div>
+            <div class="photo-card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo-card__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+              </picture>
+              <blockquote class="photo-card__post-user">
+                <cite class="photo-card__name-user">Сергей
+                  <span class="photo-card__time-online">(25 ЧАСОВ НАЗАД)</span>
+                </cite>
+                <p class="photo-card__text">Самая кубанская в мире!</p>
+              </blockquote>
+              <div class="like-account">
+                <button class="like-account__button" aria-label="Нажми Понравилось"></button>
+                <p class="like-account__text">НРАВИТСЯ:
+                  <span class="like-account__numbers">4</span>
+                </p>
+              </div>
+            </div>
+            <div class="photo-card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo-card__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фото от пользователя">
+              </picture>
+              <blockquote class="photo-card__post-user">
+                <cite class="photo-card__name-user">Максим
+                  <span class="photo-card__time-online">(40 ЧАСОВ НАЗАД)</span>
+                </cite>
+                <p class="photo-card__text">Где снег-то?</p>
+              </blockquote>
+              <div class="like-account">
+                <button class="like-account__button" aria-label="Нажми Понравилось"></button>
+                <p class="like-account__text">НРАВИТСЯ:
+                  <span class="like-account__numbers">150</span>
+                </p>
+              </div>
+            </div>
+            <div class="photo-card">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo-card__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"  width="280" height="180" alt="Фото от пользователя">
+              </picture>
+              <blockquote class="photo-card__post-user">
+                <cite class="photo-card__name-user">Надежда
+                  <span class="photo-card__time-online">(45 ЧАСОВ НАЗАД)</span>
+                </cite>
+                <p class="photo-card__text">Всем GM и взаимные лайки!</p>
+              </blockquote>
+              <div class="like-account">
+                <button class="like-account__button" aria-label="Нажми Понравилось"></button>
+                <p class="like-account__text">НРАВИТСЯ:
+                  <span class="like-account__numbers">2560</span>
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="photo-post">
+            <h2 class="visually-hidden">Запостите свое фото!</h2>
+            <div class="photo-post__text-wrapper">
+              <p class="page-container__text photo-post-text">Затмите их всех!
+                <span>Выкладывайте все, что накопилось в телефоне!</span>
+              </p>
+            </div>
+            <div class="photo-post__editor-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="photo-post__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="375" alt="Фото от пользователя">
+              </picture>
+              <div class="photo-post__form">
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <ul class="photo-post-editor">
+                    <li class="photo-post-editor__img photo-post-editor__img_active">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                      </svg>
+                      <div class="photo-post-editor__range photo-post-editor__range_mobile">
+                        <div class="photo-post-editor__bar">
+                          <span class="photo-post-editor__toggle-btn photo-post-editor__toggle-btn_first-editor"></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="photo-post-editor__img">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                        <rect y="40" width="48" height="3"/>
+                      </svg>
+                      <div class="photo-post-editor__range photo-post-editor__range_mobile">
+                        <div class="photo-post-editor__bar">
+                          <span class="photo-post-editor__toggle-btn photo-post-editor__toggle-btn_second-editor"></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="photo-post-editor__img">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                        <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                        <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                      </svg>
+                      <div class="photo-post-editor__range photo-post-editor__range_mobile">
+                        <div class="photo-post-editor__bar">
+                          <span class="photo-post-editor__toggle-btn photo-post-editor__toggle-btn_third-editor"></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="photo-post-editor__range photo-post-editor__range_tablet">
+                    <div class="photo-post-editor__bar">
+                      <span class="photo-post-editor__toggle-btn"></span>
+                    </div>
+                  </div>
+                  <div class="photo-post__button-wrapper">
+                    <button class="photo-post__button" type="submit"><span>Запостить</span></button>
+                    <button class="photo-post__button photo-post__button_cancel"><span>Отмена</span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="page-footer">
+        <a class="page-footer__logo site-logo" href="#">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <img src="img/logo-pink-blue-mobile.svg" width="148" height="44" alt="Логотип приложения Пинк">
+          </picture>
+        </a>
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <img class="social-list__img" src="img/icon-twitter.svg" width="18" height="15" alt="Твиттер">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <img class="social-list__img" src="img/icon-facebook.svg" width="9" height="19" alt="Фейсбук">
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <img class="social-list__img" src="img/icon-youtube.svg" width="15" height="14" alt="Ютьюб">
+            </a>
+          </li>
+        </ul>
+        <span class="page-footer__info-developer">Разработано
+          <a class="page-footer__link-developer" href="https://htmlacademy.ru">
+            <svg class="page-footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" aria-label="Логотип разработчика сайта">
+              <path fill="#283645" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </a>
+        </span>
+      </footer>
+    </body>
+</html>
