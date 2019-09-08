@@ -1,61 +1,75 @@
 .contacts-info {
-  .flex-mixin(@flex-direction:column);
+  .flex-mixin(@flex-direction: column);
   margin-top: -39px;
 }
 
-.contacts-info__ways {
-  list-style: none;
-  padding-left: 0;
+.contacts-info-ways {
   position: relative;
+
+  padding-left: 0;
+
+  list-style: none;
 
   &::after {
     content: "";
-    .bg-image-mixin("bg-triangle-white-footer.svg");
-    background-size: 320px 100px;
-    .size-mixin(320px;104px);
     position: absolute;
     top: 243px;
+    left: 0;
     z-index: 20;
+
+    .size-mixin(320px;104px);
+
+    .bg-image-mixin("bg-triangle-white-footer.svg");
+    background-size: 320px 100px;
   }
 }
 
 .contacts-info__text {
   width: 320px;
-  .font-mixin(@font-light;24px;29px);
-  color: @text-color;
-  text-align: center;
-  margin-bottom: 16px;
   margin-top: 0;
+  margin-bottom: 16px;
+
+  .font-mixin(@font-light;24px;29px);
+  text-align: center;
+  color: @text-color;
+
+  span {
+    display: inline-block;
+  }
 }
 
-.contacts-info__ways-name {
-  .font-mixin(@font-bold;18px;30px);
-  color: @text-color;
-  .flex-mixin(@flex-direction:column);
-  text-align: center;
+.contacts-info-ways__name {
+  .flex-mixin(@flex-direction: column);
   margin-bottom: 17px;
   padding-left: 3px;
+
+  .font-mixin(@font-bold;18px;30px);
+  text-align: center;
+  color: @text-color;
 }
 
-.contacts-info__ways-data {
-  text-decoration: none;
+.contacts-info-ways__data {
   .font-mixin(@font-light;24px;30px);
   color: @hover-color;
+  text-decoration: none;
 }
 
-.contacts-info__ways-data-link:hover {
+.contacts-info-ways__data-link:hover {
   color: @text-color;
   text-decoration: underline;
 }
 
-.contacts-info__ways-data-link:active {
+.contacts-info-ways__data-link:active {
   color: @text-color;
   text-decoration: none;
+
   opacity: 0.3;
 }
 
-.map iframe {
+.contacts-info__map iframe {
   .size-mixin(320px;198px);
+
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -63,81 +77,92 @@
     align-items: center;
 
     &::after {
-      background-size: 660px 100px;
+      top: 206px;
+
       .size-mixin(644px;235px);
 
-      top: 206px;
+      background-size: 660px 100px;
     }
   }
 
   .contacts-info__text {
     width: 370px;
+    margin-top: 5px;
+    margin-bottom: 23px;
+    margin-left: 2px;
+
     .font-mixin(@font-light;40px;48px);
     color: @text-color;
-    margin-top: 5px;
-    margin-left: 2px;
-    margin-bottom: 23px;
   }
 
-  .contacts-info__ways {
+  .contacts-info-ways {
     .flex-mixin();
     flex-wrap: wrap;
     justify-content: center;
+    width: @tablet-width;
     margin-bottom: -17px;
 
     &::after {
-      background-size: 664px 100px;
+      top: 207px;
+
       .size-mixin(664px;100px);
 
-      top: 207px;
+      background-size: 664px 100px;
     }
   }
 
-  .contacts-info__ways-name {
+  .contacts-info-ways__name {
     width: 318px;
     margin-bottom: 45px;
   }
 
-  .map iframe {
+  .contacts-info__map iframe {
     .size-mixin(660px;375px);
   }
 }
 
 @media (min-width: @desktop-width) {
-.contacts-info {
-  margin-top: -3px;
-}
+  .contacts-info {
+    margin-top: -3px;
+  }
 
-  .map {
+  .contacts-info__map {
     margin-top: -9px;
-  iframe {
-    .size-mixin(1200px;505px);
-  }
- }
 
-  .contacts-info__text {
-    width: 465px;
-    .font-mixin(@font-light;50px;56px);
-    margin-top:  -9px;
-    margin-bottom: 25px;
-  }
-
-  .contacts-info__ways {
-    margin-top: 32px;
-
-    &::after {
-      background-size: cover;
-      .size-mixin(1204px;125px);
-      top: 127px;
+    iframe {
+      .size-mixin(1200px;505px);
     }
   }
 
-  .contacts-info__ways-name:nth-child(2) {
+  .contacts-info__text {
+    width: 465px;
+    margin-top: -9px;
+    margin-bottom: 25px;
+
+    .font-mixin(@font-light;50px;56px);
+  }
+
+  .contacts-info-ways {
+    width: @desktop-width;
+    margin-top: 32px;
+
+    &::after {
+      top: 127px;
+      left: 0;
+
+      .size-mixin(1204px;125px);
+
+      background-size: cover;
+    }
+  }
+
+  .contacts-info-ways__name:nth-child(2) {
     order: 2;
   }
 
-  .contacts-info__ways-data {
-    .font-mixin(@font-light;24px;28px);
+  .contacts-info-ways__data {
     padding-top: 22px;
+
+    .font-mixin(@font-light;24px;28px);
   }
 }

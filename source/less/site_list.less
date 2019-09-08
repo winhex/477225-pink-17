@@ -4,9 +4,8 @@
   padding-left: 0;
 
   .font-mixin(@font-bold,18px,32px);
-  text-transform: uppercase;
-
   list-style: none;
+  text-transform: uppercase;
 }
 
 .site-list__item {
@@ -48,7 +47,7 @@
     left: 351px;
     z-index: 25;
 
-    display: flex;
+    .flex-mixin();
     flex-wrap: wrap;
     justify-content: flex-end;
     width: 720px;
@@ -67,6 +66,7 @@
 
   .site-list__item:active a {
     color: @white-color;
+
     opacity: 0.3;
   }
 
