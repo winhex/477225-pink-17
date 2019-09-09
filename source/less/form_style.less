@@ -166,7 +166,7 @@
   margin-top: -5px;
   margin-bottom: 41px;
 
- .font-mixin(@font-normal;18px;30px);
+  .font-mixin(@font-normal;18px;30px);
   color: @text-color;
 }
 
@@ -317,10 +317,6 @@
     }
   }
 
-  .page-container__button {
-    .flex-mixin();
-  }
-
   .personal-data_bg-grey {
     align-self: center;
     width: 590px;
@@ -410,7 +406,7 @@
       display: block;
       .size-mixin(62px;64px);
 
-     .bg-image-mixin("icon-phone.svg");
+      .bg-image-mixin("icon-phone.svg");
       background-color: @bg-grey-color;
       background-position: 50% 50%;
     }
@@ -450,6 +446,7 @@
   }
 
   .page-container__button {
+    .flex-mixin();
     justify-content: space-between;
     align-items: center;
     width: 620px;
@@ -458,6 +455,10 @@
     p {
       margin-top: 0;
     }
+  }
+
+  .page-container__form {
+    margin-top: -12px;
   }
 
   .page-container__form-button {
@@ -495,11 +496,12 @@
   }
 
   .page-container__form {
+    .flex-mixin();
     flex-wrap: wrap;
     justify-content: center;
     width: 940px;
 
-    .flex-mixin();
+    padding-bottom: 25px;
   }
 
   .personal-data {

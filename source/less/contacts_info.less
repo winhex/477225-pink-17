@@ -1,6 +1,7 @@
 .contacts-info {
   .flex-mixin(@flex-direction: column);
   margin-top: -39px;
+  padding: 0 calc(50% - 160px);
 }
 
 .contacts-info-ways {
@@ -9,18 +10,21 @@
   padding-left: 0;
 
   list-style: none;
+}
 
-  &::after {
+.contacts-info-map {
+  position: relative;
+  width: 100%;
+
+  &::before {
     content: "";
     position: absolute;
-    top: 277px;
-    left: 0;
     z-index: 20;
 
-    .size-mixin(320px;104px);
+    .size-mixin(100%;104px);
 
     .bg-image-mixin("bg-triangle-white-footer.svg");
-    background-size: 320px 39px;
+    background-size: contain;
   }
 }
 
@@ -66,8 +70,8 @@
   opacity: 0.3;
 }
 
-.contacts-info__map iframe {
-  .size-mixin(320px;198px);
+.contacts-info-map iframe {
+  .size-mixin(100%;200px);
 
   border: none;
 }
@@ -76,13 +80,8 @@
   .contacts-info {
     align-items: center;
 
-    &::after {
-      top: 206px;
-
-      .size-mixin(644px;235px);
-
-      background-size: 660px 100px;
-    }
+    margin-top: -42px;
+    padding: 0 calc(50% - 330px);
   }
 
   .contacts-info__text {
@@ -101,14 +100,6 @@
     justify-content: center;
     width: @tablet-width;
     margin-bottom: -17px;
-
-    &::after {
-      top: 223px;
-
-      .size-mixin(664px;100px);
-
-      background-size: 664px 68px;
-    }
   }
 
   .contacts-info-ways__name {
@@ -116,28 +107,44 @@
     margin-bottom: 45px;
   }
 
-  .contacts-info__map iframe {
-    .size-mixin(660px;375px);
+  .contacts-info-map::before {
+    background-size: 100% 100%;
+  }
+
+  .contacts-info-map iframe {
+    height: 375px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts-info {
     margin-top: -3px;
+    padding: 0 calc(50% - 480px);
   }
 
-  .contacts-info__map {
+  .contacts-info-map {
+    width: 100%;
     margin-top: -9px;
 
-    iframe {
-      .size-mixin(1200px;505px);
+    &::before {
+      .size-mixin(100%;100%);
+
+      background-size: contain;
     }
+
+    iframe {
+      .size-mixin(100%;505px);
+    }
+  }
+
+  .contacts-info-ways__name {
+    padding-left: 0;
   }
 
   .contacts-info__text {
     width: 465px;
-    margin-top: -9px;
-    margin-bottom: 25px;
+    margin-top: -7px;
+    margin-bottom: 26px;
 
     .font-mixin(@font-light;50px;56px);
   }
@@ -145,15 +152,6 @@
   .contacts-info-ways {
     width: @desktop-width;
     margin-top: 32px;
-
-    &::after {
-      top: 127px;
-      left: 0;
-
-      .size-mixin(1204px;125px);
-
-      background-size: 1200px 101px;
-    }
   }
 
   .contacts-info-ways__name:nth-child(2) {

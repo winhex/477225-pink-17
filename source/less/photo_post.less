@@ -96,23 +96,23 @@
   }
 }
 
-.photo-post-editor__range {
+.photo-post-editor-range {
   .flex-mixin();
   justify-content: center;
   margin-bottom: 74px;
 }
 
-.photo-post-editor__range_mobile {
+.photo-post-editor-range_mobile {
   display: none;
 }
 
-.photo-post-editor__range .photo-post-editor__bar {
+.photo-post-editor-range .photo-post-editor-bar {
   .size-mixin(238px;2px);
 
   background-color: @text-color;
 }
 
-.photo-post-editor__toggle-btn {
+.photo-post-editor-toggle-btn {
   position: relative;
   bottom: 6px;
   left: 190px;
@@ -180,11 +180,11 @@
     background-color: @bg-grey-color;
   }
 
-  .photo-post-editor__range_tablet {
+  .photo-post-editor-range_tablet {
     display: none;
   }
 
-  .photo-post-editor__range_mobile {
+  .photo-post-editor-range_mobile {
     display: block;
   }
 
@@ -214,17 +214,17 @@
     fill: @hover-color;
   }
 
-  .photo-post-editor__range {
+  .photo-post-editor-range {
     margin-bottom: 0;
     padding-top: 7px;
   }
 
-  .photo-post-editor__range .photo-post-editor__bar {
+  .photo-post-editor-range .photo-post-editor-bar {
     .size-mixin(204px;2px);
     margin-top: 4px;
   }
 
-  .photo-post-editor__toggle-btn {
+  .photo-post-editor-toggle-btn {
     position: relative;
     bottom: 5px;
 
@@ -270,7 +270,7 @@
     padding-left: 14px;
   }
 
-  .photo-post-editor__img:last-child .photo-post-editor__bar {
+  .photo-post-editor__img:last-child .photo-post-editor-bar {
     margin-top: 1px;
   }
 }
@@ -307,12 +307,8 @@
     padding-bottom: 12px;
   }
 
-  .photo-post-editor__range {
+  .photo-post-editor-range {
     padding-top: 20px;
-  }
-
-  .photo-post-editor__range .photo-post-editor__bar {
-    width: 286px;
   }
 
   .photo-post__button {
@@ -338,11 +334,12 @@
     .size-mixin(34px;34px);
   }
 
-  .photo-post-editor__img:last-child .photo-post-editor__bar {
+  .photo-post-editor__img:last-child .photo-post-editor-bar {
     margin-top: -1px;
   }
 
-  .photo-post-editor__range .photo-post-editor__bar {
+  .photo-post-editor-range .photo-post-editor-bar {
+    width: 286px;
     margin-top: 0;
   }
 

@@ -2,6 +2,8 @@
   .flex-mixin(@flex-direction: column);
   justify-content: center;
 
+  width: 100%;
+
   background-color: @white-color;
 }
 
@@ -10,6 +12,8 @@
 }
 
 .advantages__list-wrapper {
+  padding: 0 calc(50% - 160px);
+
   background-color: @bg-grey-color;
 }
 
@@ -17,19 +21,22 @@
   position: relative;
 
   width: 320px;
+  padding: 0 calc(50% - 160px);
   padding-top: 40px;
 
   &::after {
     content: "";
     position: absolute;
-    top: 151px;
+    top: 158px;
     left: -2px;
     z-index: 20;
-    .size-mixin(328px;104px);
+    .size-mixin(100%;104px);
+    padding: 0 calc(50% - 160px);
 
     transform: rotate(-1deg);
 
     .bg-image-mixin("bg-triangle-white.svg");
+    background-size: cover;
   }
 }
 
@@ -62,10 +69,11 @@
     content: "";
     position: relative;
     top: 26px;
-    left: 1px;
+    left: 0;
 
     display: block;
     .size-mixin(157px,330px);
+    padding: 0 calc(50% - 160px);
     margin: 0 auto;
 
     .bg-image-mixin("iphone-screen-mobile@1x.png");
@@ -98,14 +106,15 @@
     align-items: center;
     width: @tablet-width;
     margin-bottom: 4px;
+    padding: 0 calc(50% - 330px);
     padding-top: 50px;
 
     &::after {
       content: "";
       position: absolute;
-      top: 198px;
+      top: 96px;
       z-index: 20;
-      .size-mixin(665px;200px);
+      height: 200px;
 
       transform: none;
 
@@ -145,7 +154,7 @@
   }
 
   .advantages__list-wrapper {
-    width: @tablet-width;
+    padding: 0 calc(50% - 330px);
   }
 
 
@@ -172,17 +181,17 @@
 @media (min-width: @desktop-width) {
   .advantages__text-wrapper {
     width: 960px;
-    margin:0 auto;
     margin-bottom: 14px;
+    padding: 0 calc(50% - 480px);
     padding-top: 66px;
 
     &::after {
       position: absolute;
-      top: 245px;
-      left: -122px;
+      top: 253px;
+      left: -168px;
       z-index: 20;
 
-      .size-mixin(1204px;173px);
+      .size-mixin(100%;173px);
 
       background-size: cover;
     }
@@ -199,7 +208,7 @@
   .advantages__list-wrapper {
     .flex-mixin();
     justify-content: center;
-    width: 1200px;
+    padding: 0 calc(50% - 480px);
 
     background-color: @bg-grey-color;
   }

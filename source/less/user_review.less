@@ -5,6 +5,7 @@
 
   .flex-mixin(@flex-direction: column);
   align-items: center;
+  padding: 0 calc(50% - 160px);
   padding-top: 26px;
 
   background-color: @white-color;
@@ -13,12 +14,13 @@
     content: "";
     position: absolute;
     top: 284px;
-    left: 18px;
+    left: 0;
     z-index: 20;
 
-    .size-mixin(322px;104px);
+    .size-mixin(100%;104px);
 
     .bg-image-mixin("bg-triangle-white.svg");
+    background-size: cover;
   }
 }
 
@@ -105,10 +107,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .user-review {
+    padding: 0 calc(50% - 330px);
+  }
+
   .user-review__text {
     order: 0;
     width: 639px;
-    margin-top: -5px;
+    margin-top: 23px;
     margin-bottom: 34px;
 
     .font-mixin(@font-normal;18px;30px);
@@ -131,10 +137,8 @@
   }
 
   .user-review::after {
-    top: 248px;
+    top: 274px;
     left: 24px;
-
-    width: 673px;
   }
 }
 
@@ -145,6 +149,7 @@
 
   .user-review {
     margin-bottom: 27px;
+    padding: 0 calc(50% - 480px);
     padding-top: 4px;
 
     &::before {
@@ -180,18 +185,23 @@
 
   .btn-arrow-left {
     position: absolute;
-    top: 90px;
-    left: -85px;
+    top: 92px;
+    left: 9px;
+
+    padding: 0 calc(50% - 480px);
   }
 
   .btn-arrow-right {
     position: absolute;
-    right: -85px;
-    bottom: 142px;
+    right: 12px;
+    bottom: 146px;
+
+    padding: 0 calc(50% - 480px);
   }
 
   .user-review__text {
     width: 690px;
+    margin-top: -3px;
   }
 
   .user-review__post {
@@ -208,9 +218,9 @@
 
   .user-review::after {
     top: 285px;
-    left: -224px;
+    left: -116px;
 
-    width: 1220px;
+    padding: 0 calc(50% - 478px);
 
     transform: rotate(1deg);
   }
