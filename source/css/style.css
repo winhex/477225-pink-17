@@ -553,7 +553,7 @@ img {
   .first-page-style::after {
     background-image: url("../img/iphone-hand-mobile@2x.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
   }
 }
 .page-container__title-wrapper {
@@ -938,7 +938,7 @@ img {
 .advantages__text-wrapper::after {
   content: "";
   position: absolute;
-  top: 158px;
+  top: 160px;
   left: -2px;
   z-index: 20;
   width: 100%;
