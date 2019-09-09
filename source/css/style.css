@@ -420,11 +420,11 @@ img {
   }
   .page-nav__logo-image {
     top: -23px;
-    left: 72px;
+    left: 67px;
   }
   .page-header__logo {
     top: -23px;
-    left: 129px;
+    left: 67px;
   }
 }
 .site-list {
@@ -466,7 +466,7 @@ img {
   .site-list {
     position: relative;
     bottom: 128px;
-    left: 294px;
+    left: 289px;
     z-index: 25;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -483,7 +483,7 @@ img {
     width: 720px;
     font-family: OpenSans, Arial, sans-serif;
     font-size: 18px;
-    line-height: 15px;
+    line-height: 13px;
     text-transform: none;
   }
   .site-list__item {
@@ -499,6 +499,13 @@ img {
   }
   .site-list__item_active {
     border-bottom: 1px solid #ffffff;
+  }
+  .site-list__item_active:hover {
+    border-bottom: 1px solid #d22856;
+  }
+  .site-list__item_active:active {
+    border-bottom: 1px solid #ffffff;
+    opacity: 0.3;
   }
 }
 .main-contaiter {
@@ -730,7 +737,7 @@ img {
   }
   .page-container__text {
     width: 620px;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
   .page-container__text_tender {
     width: 776px;
@@ -1106,12 +1113,14 @@ img {
 @media (min-width: 1200px) {
   .advantages__text-wrapper {
     width: 960px;
+    margin: 0 auto;
     margin-bottom: 14px;
     padding-top: 66px;
   }
   .advantages__text-wrapper::after {
     position: absolute;
     top: 245px;
+    left: -122px;
     z-index: 20;
     width: 1204px;
     height: 173px;
@@ -1571,6 +1580,7 @@ img {
     display: block;
     width: 660px;
     margin: 0 auto;
+    margin-top: -5px;
   }
   .page-footer {
     -webkit-box-orient: horizontal;
@@ -1616,7 +1626,7 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 940px;
-    padding-bottom: 3px;
+    padding-bottom: 40px;
   }
   .page-footer_first-page {
     width: 1200px;
@@ -1910,6 +1920,7 @@ img {
   background-color: #f2f2f2;
 }
 .page-container__button sup {
+  font-size: 14px;
   color: #d22856;
 }
 .page-container__button p {
@@ -1951,26 +1962,26 @@ img {
             flex-grow: 1;
     margin-bottom: 0;
   }
-  .personal-data:nth-child(4) {
+  .personal-data:nth-of-type(4) {
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
   }
-  .personal-data:nth-child(4) .personal-data__title {
+  .personal-data:nth-of-type(4) .personal-data__title {
     width: 368px;
   }
-  .personal-data:nth-child(1) {
+  .personal-data:nth-of-type(1) {
     -webkit-box-ordinal-group: -4;
         -ms-flex-order: -5;
             order: -5;
     border: none;
   }
-  .personal-data:nth-child(3) {
+  .personal-data:nth-of-type(3) {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
   }
-  .personal-data:nth-child(3) .personal-data__title {
+  .personal-data:nth-of-type(3) .personal-data__title {
     top: -11px;
     left: 176px;
     width: 260px;
@@ -2126,7 +2137,7 @@ img {
     display: inline-block;
   }
   .page-container__button p {
-    width: 301px;
+    width: 315px;
   }
   .personal-data__title {
     left: 31px;
@@ -2172,7 +2183,7 @@ img {
     padding-right: 20px;
     padding-left: 22px;
   }
-  .personal-data:nth-child(3) .personal-data__title {
+  .personal-data:nth-of-type(3) .personal-data__title {
     left: 336px;
   }
   .personal-data__wrapper_contact .personal-data__input {
@@ -2188,11 +2199,11 @@ img {
     margin-bottom: 0;
   }
   .personal-data__text_tel::before {
-    bottom: 38px;
+    bottom: 40px;
     left: 292px;
   }
   .personal-data__text_email::before {
-    bottom: 51px;
+    bottom: 53px;
     left: 813px;
   }
   .personal-data__wrapper_contact .personal-data__text {
@@ -2202,9 +2213,12 @@ img {
   }
   .personal-data__achievement {
     position: relative;
-    left: 55px;
+    left: 45px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2214,11 +2228,16 @@ img {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .personal-data:nth-child(2) {
+  .personal-data:nth-of-type(2) {
     width: 940px;
     margin-top: -17px;
     padding-top: 57px;
     padding-bottom: 15px;
+  }
+  .personal-data:nth-of-type(1) {
+    position: relative;
+    top: 0;
+    right: 36px;
   }
   .personal-data__title_feedback {
     top: -8px;
@@ -2228,32 +2247,32 @@ img {
     width: 261px;
     margin-right: 30px;
   }
-  .personal-data__checkbox:nth-child(1) {
+  .personal-data__checkbox:nth-of-type(1) {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
-  .personal-data__checkbox:nth-child(3) {
+  .personal-data__checkbox:nth-of-type(3) {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
-  .personal-data__checkbox:nth-child(4) {
+  .personal-data__checkbox:nth-of-type(4) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .personal-data__checkbox:nth-child(2) {
+  .personal-data__checkbox:nth-of-type(2) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .personal-data__checkbox:nth-child(5) {
+  .personal-data__checkbox:nth-of-type(5) {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
-  .personal-data__checkbox:nth-child(6) {
+  .personal-data__checkbox:nth-of-type(6) {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -2845,10 +2864,10 @@ img {
     margin-bottom: -17px;
   }
   .contacts-info-ways::after {
-    top: 207px;
+    top: 223px;
     width: 664px;
     height: 100px;
-    background-size: 664px 100px;
+    background-size: 664px 68px;
   }
   .contacts-info-ways__name {
     width: 318px;
@@ -2887,7 +2906,7 @@ img {
     left: 0;
     width: 1204px;
     height: 125px;
-    background-size: cover;
+    background-size: 1200px 101px;
   }
   .contacts-info-ways__name:nth-child(2) {
     -webkit-box-ordinal-group: 3;
@@ -3430,12 +3449,12 @@ img {
 .modal-window_success {
   bottom: 452px;
   left: 0;
-  display: block;
+  display: none;
 }
 .modal-window_failure {
   top: 1098px;
   left: 0;
-  display: block;
+  display: none;
   padding-top: 34px;
   padding-bottom: 12px;
 }

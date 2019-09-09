@@ -255,6 +255,7 @@
 }
 
 .page-container__button sup {
+  font-size: 14px;
   color: @hover-color;
 }
 
@@ -292,7 +293,7 @@
     margin-bottom: 0;
   }
 
-  .personal-data:nth-child(4) {
+  .personal-data:nth-of-type(4) {
     order: -2;
 
     .personal-data__title {
@@ -300,12 +301,12 @@
     }
   }
 
-  .personal-data:nth-child(1) {
+  .personal-data:nth-of-type(1) {
     order: -5;
     border: none;
   }
 
-  .personal-data:nth-child(3) {
+  .personal-data:nth-of-type(3) {
     order: -1;
 
     .personal-data__title {
@@ -476,7 +477,7 @@
   }
 
   .page-container__button p {
-    width: 301px;
+    width: 315px;
   }
 
   .personal-data__title {
@@ -519,7 +520,7 @@
     padding-left: 22px;
   }
 
-  .personal-data:nth-child(3) .personal-data__title {
+  .personal-data:nth-of-type(3) .personal-data__title {
     left: 336px;
   }
 
@@ -537,12 +538,12 @@
   }
 
   .personal-data__text_tel::before {
-    bottom: 38px;
+    bottom: 40px;
     left: 292px;
   }
 
   .personal-data__text_email::before {
-    bottom: 51px;
+    bottom: 53px;
     left: 813px;
   }
 
@@ -555,19 +556,26 @@
 
   .personal-data__achievement {
     position: relative;
-    left: 55px;
+    left: 45px;
 
     flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: 0;
 
     .flex-mixin();
   }
 
-  .personal-data:nth-child(2) {
+  .personal-data:nth-of-type(2) {
     width: 940px;
     margin-top: -17px;
     padding-top: 57px;
     padding-bottom: 15px;
+  }
+
+  .personal-data:nth-of-type(1) {
+    position: relative;
+    top: 0;
+    right: 36px;
   }
 
   .personal-data__title_feedback {
@@ -580,27 +588,27 @@
     margin-right: 30px;
   }
 
-  .personal-data__checkbox:nth-child(1) {
+  .personal-data__checkbox:nth-of-type(1) {
     order: 0;
   }
 
-  .personal-data__checkbox:nth-child(3) {
+  .personal-data__checkbox:nth-of-type(3) {
     order: 0;
   }
 
-  .personal-data__checkbox:nth-child(4) {
+  .personal-data__checkbox:nth-of-type(4) {
     order: 2;
   }
 
-  .personal-data__checkbox:nth-child(2) {
+  .personal-data__checkbox:nth-of-type(2) {
     order: 1;
   }
 
-  .personal-data__checkbox:nth-child(5) {
+  .personal-data__checkbox:nth-of-type(5) {
     order: 0;
   }
 
-  .personal-data__checkbox:nth-child(6) {
+  .personal-data__checkbox:nth-of-type(6) {
     order: 2;
   }
 
